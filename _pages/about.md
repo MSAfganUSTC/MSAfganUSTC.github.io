@@ -1,56 +1,280 @@
 ---
+
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Muhammad Sher Afgan"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+redirect_from:
+
+* /about/
+* /about.html
+
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+# About Me
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a Ph.D. candidate at the **University of Science and Technology of China (USTC)**, working in the field of **Computer Vision and Generative Artificial Intelligence**.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+My research focuses on developing intelligent and controllable generative models for visual understanding and synthesis. I am particularly interested in **diffusion models, self-supervised learning, Transformer architectures, multimodal learning, identity-preserving image generation, facial attribute synthesis, text-to-image generation, and deepfake detection**.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+My current research aims to bridge generative AI with real-world applications and human welfare. My work includes controllable facial expression generation, multi-attribute facial synthesis, deepfake generation and detection, and multimodal visual understanding.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+## Research Interests
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+* Generative Artificial Intelligence
+* Computer Vision
+* Diffusion Models
+* Self-Supervised Learning
+* Transformer Architectures
+* Multimodal Learning
+* Vision-Language Models
+* Text-to-Image Generation
+* Identity-Preserving Image Generation
+* Facial Attribute Synthesis
+* Deepfake Detection
+* Responsible AI and AI for Human Welfare
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Education
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+### Ph.D. in Computer Science
 
-**Markdown generator**
+**University of Science and Technology of China (USTC)**
+Hefei, China
+2019 – Present
+**Current CGPA:** 3.71/4.00
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+My doctoral research focuses on generative AI, computer vision, and diffusion-based image synthesis.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+### M.S. in Computer Science
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan
+2016 – Apr. 2018
+**CGPA:** 3.67/4.00
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+**Thesis:** *Efficient Crypto-Stegnano Technique for Colored Image Protection*
+
+Published research including work in *IEEE Access*.
+
+### B.S. in Computer Science
+
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan
+2011 – Sep. 2015
+**CGPA:** 3.92/4.00
+
+Graduated with **1st position among 1,120 students**.
+
+**Final-Year Project:** *Radiologic X-Ray Image Enhancer & Analyzer (RXIEA)*
+
+## Research & Professional Experience
+
+### Ph.D. Candidate
+
+**University of Science and Technology of China (USTC)**
+Hefei, China
+Present
+
+* Conducting research in generative artificial intelligence and computer vision.
+* Developing text-to-image generation frameworks using diffusion models.
+* Working on controllable facial expression and multi-attribute image synthesis.
+* Researching identity-preserving generation and multimodal visual understanding.
+* Developing research frameworks including **FaceExpr**, **DiffAgeX**, and **SecureFace**.
+* Exploring interdisciplinary applications of generative AI for human welfare and public safety.
+
+### Junior Researcher
+
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan
+Apr. 2017 – Sep. 2019
+
+* Developed research-oriented software applications using C#, Java, and MATLAB.
+* Worked with Accord.NET, AForge.NET, OpenCV, OpenSSL, OpenMP, and MPI.
+* Conducted research in image processing, video security, distributed analytics, cryptography, and machine learning.
+* Contributed to research involving CCTV privacy, medical image processing, IoT systems, and formal software specification.
+* Designed algorithms for lightweight encryption, object detection, and video anonymization.
+
+### Research Assistant (Part-Time)
+
+**The Developers Software Company**
+Bahawalpur, Pakistan
+Aug. 2018 – Present
+
+* Conducted research in image analytics for medical X-ray defect detection.
+* Developed IoT algorithms for joint routing and energy-aware message scheduling.
+* Performed data modelling and analytics for vehicular geolocation systems.
+
+### Visiting Lecturer (Part-Time)
+
+**National College of Science and Information Technology (NACSIT)**
+Bahawalpur, Pakistan
+Feb. 2017 – 2019
+
+* Delivered Computer Graphics courses to undergraduate and postgraduate students.
+* Supervised student projects involving desktop and web-based applications.
+
+### Lecturer
+
+**Glims Institute of Modern Studies**
+Bahawalpur, Pakistan
+Apr. 2016 – 2019
+
+* Taught Computer Graphics, Databases, Distributed Databases, and Advanced Object-Oriented Programming.
+* Designed course material and supervised software development projects.
+
+### Visiting Lecturer (Part-Time)
+
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan
+Feb. 2016 – 2019
+
+* Taught Computer Graphics, Distributed Computing, Databases, and programming languages including C#, C++, Java, and Python.
+* Taught Web Application Development using PHP and JavaScript.
+* Supervised undergraduate and postgraduate software development projects.
+
+### Programmer — Apprenticeship
+
+**Fauji Fertilizer Company Ltd.**
+Rawalpindi, Pakistan
+Jun. 2015 – Feb. 2016
+
+* Worked as a member of the web development team.
+* Contributed to the FFC Meal and Foot website.
+* Assisted with enterprise programming workflows.
+* Gained practical experience with SAP modules and organizational IT systems.
+
+## Publications
+
+### First-Author Publications
+
+**FaceExpr: Personalized Facial Expression Generation via Attention-Focused U-Net Feature Fusion in Diffusion Models**
+*M. S. Afgan, B. Liu, M. N. Asghar, W. Khalid, K. Zou, D. Sheng*
+**Information Fusion**, 2026.
+Q1 Journal — JIF 17.4
+
+**DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion**
+*M. S. Afgan, B. Liu, W. Khalid, et al.*
+**IEEE Transactions on Circuits and Systems for Video Technology**, 2026.
+Accepted. Q1 Journal — JIF 10.8
+
+**SecureFace: A Controlled Deepfake Generation Framework for Exposing Detector Vulnerabilities**
+*M. S. Afgan, B. Liu, A. Shifa, M. N. Asghar*
+**Cyber-RCI 2025**, University of Galway, Ireland.
+
+**ViDiExPo: Video-Supervised Disentanglement with Interaction-Aware Fusion for Controllable Expression and Pose in Diffusion Models**
+*M. S. Afgan, B. Liu, W. Khalid, et al.*
+**Neurocomputing**, 2026.
+Under Review.
+
+### Co-Authored Publications
+
+**Bridging the Sky and Ground: Towards View-Invariant Feature Learning for Aerial-Ground Person Re-Identification**
+*W. Khalid, B. Liu, X. Li, M. Waqas, M. S. Afgan*
+**IEEE/CVF International Conference on Computer Vision (ICCV), 2025.**
+
+**Towards Cross-View Learning for Aerial-Ground Person Re-Identification**
+*W. Khalid, B. Liu, X. Li, Y. Wang, M. S. Afgan*
+**European Conference on Computer Vision (ECCV), 2026.**
+Accepted.
+
+**xTAFL: Cross-Time Adaptive Feature Learning for Anytime Person Re-Identification**
+*W. Khalid, B. Liu, X. Li, M. S. Afgan*
+**AAAI Conference on Artificial Intelligence (AAAI), 2026.**
+Under Review.
+
+**Joint Crypto-Stego Scheme for Enhanced Image Protection with Nearest-Centroid Clustering**
+*A. Shifa, M. N. Asghar, M. Fleury, M. S. Afgan, I. Memon, et al.*
+**IEEE Access**, 2018.
+
+**Ontology-Based Intelligent Security Framework for Smart Video Surveillance**
+*A. Shifa, M. N. Asghar, M. Fleury, M. S. Afgan*
+**Future Technologies Conference**, 2018.
+
+## Honors & Awards
+
+### First Position Among 1,120 Students
+
+Achieved **1st position** among 1,120 students during the B.S. in Computer Science at The Islamia University of Bahawalpur.
+
+### Chinese Scholarship Council (CSC)
+
+Fully funded Ph.D. scholarship at the **University of Science and Technology of China (USTC)**.
+
+### Academic Excellence
+
+Graduated with a **3.92/4.00 CGPA** in B.S. Computer Science and achieved the highest academic standing in the cohort.
+
+## Certifications & Professional Development
+
+### Chinese Language / International Training
+
+Participated in international academic and professional development activities during graduate study in China.
+
+## Academic & Teaching Experience
+
+I have extensive teaching and mentoring experience in computer science, including:
+
+* Computer Graphics
+* Computer Programming
+* Object-Oriented Programming
+* Databases
+* Distributed Databases
+* Distributed Computing
+* Web Application Development
+* Software Development
+* Machine Learning
+* Image Processing
+
+I have also supervised undergraduate and postgraduate student projects in desktop, web, and research-oriented software development.
+
+## Technical Skills
+
+**Programming:**
+Python, C++, C#, Java, MATLAB, PHP, JavaScript
+
+**Computer Vision & AI:**
+PyTorch, OpenCV, Diffusion Models, GANs, VAEs, Transformers, Deep Learning, Machine Learning
+
+**Research Areas:**
+Generative AI, Computer Vision, Image Synthesis, Multimodal Learning, Self-Supervised Learning, Vision-Language Models, Deepfake Detection
+
+**Software & Systems:**
+Linux, Git, OpenMP, MPI, OpenSSL, Accord.NET, AForge.NET
+
+## Selected Research Projects
+
+### FaceExpr
+
+Personalized facial expression generation using attention-focused U-Net feature fusion within diffusion models.
+
+[View project on GitHub](https://github.com/MSAfganUSTC/FaceExpr)
+
+### DiffAgeX
+
+Identity-consistent multi-attribute facial synthesis using adaptive residual fusion.
+
+[View project on GitHub](https://github.com/MSAfganUSTC/DiffAgeX)
+
+### ViDiExPo
+
+Video-supervised disentanglement with interaction-aware fusion for controllable expression and pose generation.
+
+[View project on GitHub](https://github.com/MSAfganUSTC/ViDiExPo)
+
+## Research Philosophy
+
+My research goal is to develop **robust, controllable, and responsible generative AI systems** that can move beyond synthetic demonstrations toward meaningful real-world applications.
+
+I am particularly interested in research at the intersection of **generative AI, computer vision, multimodal intelligence, privacy, security, and human welfare**.
+
+## Contact
+
+**Muhammad Sher Afgan**
+Ph.D. Candidate
+University of Science and Technology of China (USTC)
+Hefei, China
+
+**Email:** [msafgan@mail.ustc.edu.cn](mailto:msafgan@mail.ustc.edu.cn)
+
+**GitHub:** [MSAfganUSTC](https://github.com/MSAfganUSTC)
+
+**ORCID:** [0000-0002-0925-1557](https://orcid.org/0000-0002-0925-1557)
