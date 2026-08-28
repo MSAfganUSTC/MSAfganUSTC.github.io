@@ -1,91 +1,31 @@
-```yaml
-# Basic Site Settings
+# Site Settings
 locale: "en-US"
 site_theme: "default"
-
 title: "Muhammad Sher Afgan"
 title_separator: "-"
 name: &name "Muhammad Sher Afgan"
 description: &description "Computer Vision and Generative AI Researcher"
-
 url: "https://msafganustc.github.io"
 baseurl: ""
 repository: "MSAfganUSTC/MSAfganUSTC.github.io"
 
-
-# Site Author
 author:
   avatar: "profile.png"
   name: "Muhammad Sher Afgan"
-  pronouns:
   bio: "Computer Vision & Generative AI Researcher"
   location: "Hefei, China"
   employer: "University of Science and Technology of China (USTC)"
   uri: "https://msafganustc.github.io"
   email: "msafgan@mail.ustc.edu.cn"
-
-  # Academic profiles
-  academia:
-  arxiv:
-  googlescholar:
-  inspire-hep:
-  impactstory:
   orcid: "https://orcid.org/0000-0002-0925-1557"
-  semantic:
-  ssrn:
-  pubmed:
-  researchgate:
-  scopus:
-  zotero:
-
-  # Development
-  bitbucket:
-  codepen:
-  dribbble:
   github: "MSAfganUSTC"
-  kaggle:
-  stackoverflow:
 
-  # Social media
-  artstation:
-  bluesky:
-  facebook:
-  flickr:
-  foursquare:
-  goodreads:
-  google_plus:
-  keybase:
-  instagram:
-  lastfm:
-  linkedin:
-  mastodon:
-  medium:
-  pinterest:
-  soundcloud:
-  steam:
-  telegram:
-  tumblr:
-  twitter:
-  vine:
-  weibo:
-  wikipedia:
-  xing:
-  youtube:
-  zhihu:
-
-
-# Publication Categories
 publication_category:
-  books:
-    title: "Books"
   manuscripts:
     title: "Journal Articles"
   conferences:
     title: "Conference Papers"
 
-
-# Site Settings
-teaser:
 breadcrumbs: false
 words_per_minute: 160
 future: true
@@ -94,62 +34,12 @@ talkmap_link: false
 
 comments:
   provider:
-  disqus:
-    shortname:
-  discourse:
-    server:
-  facebook:
-    appid:
-    num_posts:
-    colorscheme:
-
-staticman:
-  allowedFields:
-    - name
-    - email
-    - url
-    - message
-  branch: "gh-pages"
-  commitMessage: "New comment."
-  filename: "comment-{@timestamp}"
-  format: "yml"
-  moderation: true
-  path: "_data/comments/{options.slug}"
-  requiredFields:
-    - name
-    - email
-    - message
-  transforms:
-    email: "md5"
-  generatedFields:
-    date:
-      type: "date"
-      options:
-        format: "iso8601"
 
 atom_feed:
   hide: false
-  path:
 
-
-# SEO
-google_site_verification:
-bing_site_verification:
-alexa_site_verification:
-yandex_site_verification:
-
-
-# Social Sharing
 twitter:
   username: "MSAfganUSTC"
-
-facebook:
-  username:
-  app_id:
-  publisher:
-
-og_image:
-og_description:
 
 social:
   type: "Person"
@@ -158,15 +48,9 @@ social:
     - "https://github.com/MSAfganUSTC"
     - "https://orcid.org/0000-0002-0925-1557"
 
-
-# Analytics
 analytics:
   provider: "false"
-  google:
-    tracking_id:
 
-
-# Reading Files
 include:
   - .htaccess
   - _pages
@@ -207,16 +91,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -227,29 +107,21 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# Collections
 collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-
   publications:
     output: true
     permalink: /:collection/:path/
-
   portfolio:
     output: true
     permalink: /:collection/:path/
-
   talks:
     output: true
     permalink: /:collection/:path/
 
-
-# Defaults
 defaults:
-
   - scope:
       path: ""
       type: posts
@@ -257,7 +129,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
 
@@ -274,8 +146,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
 
   - scope:
       path: ""
@@ -283,8 +155,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
 
   - scope:
       path: ""
@@ -292,8 +164,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
 
   - scope:
       path: ""
@@ -301,21 +173,15 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
-
-# Sass / SCSS
 sass:
   sass_dir: _sass
   style: compressed
 
-
-# Output
 permalink: /:categories/:title/
 timezone: Etc/UTC
 
-
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -324,8 +190,6 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
-
-# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -334,8 +198,6 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
-# Archives
 category_archive:
   type: liquid
   path: /categories/
@@ -344,10 +206,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
-
-# HTML Compression
 compress_html:
   clippings: all
   ignore:
     envs: development
-```
