@@ -10,271 +10,241 @@ redirect_from:
 
 ---
 
-# About Me
+# Muhammad Sher Afgan
 
-I am a Ph.D. candidate at the **University of Science and Technology of China (USTC)**, working in the field of **Computer Vision and Generative Artificial Intelligence**.
+### Computer Vision & Generative AI Researcher
 
-My research focuses on developing intelligent and controllable generative models for visual understanding and synthesis. I am particularly interested in **diffusion models, self-supervised learning, Transformer architectures, multimodal learning, identity-preserving image generation, facial attribute synthesis, text-to-image generation, and deepfake detection**.
+I am a Ph.D. candidate at the **University of Science and Technology of China (USTC)**, Hefei, China, working in the area of **Computer Vision and Generative AI**.
 
-My current research aims to bridge generative AI with real-world applications and human welfare. My work includes controllable facial expression generation, multi-attribute facial synthesis, deepfake generation and detection, and multimodal visual understanding.
+My research focuses on **self-supervised learning, Transformer architectures, diffusion models, multimodal learning, and controllable image synthesis**. My current research interests include identity-preserving image generation, text-to-image synthesis, facial attribute manipulation, deepfake detection, and responsible AI for societal good.
+
+I am particularly interested in developing generative AI systems that can contribute to **public safety, human welfare, and privacy-preserving computer vision**.
 
 ## Research Interests
 
-* Generative Artificial Intelligence
 * Computer Vision
+* Generative AI
 * Diffusion Models
 * Self-Supervised Learning
 * Transformer Architectures
 * Multimodal Learning
 * Vision-Language Models
 * Text-to-Image Generation
-* Identity-Preserving Image Generation
+* Identity-Preserving Image Synthesis
 * Facial Attribute Synthesis
 * Deepfake Detection
-* Responsible AI and AI for Human Welfare
+* Privacy-Preserving Computer Vision
+* Responsible AI
 
 ## Education
 
 ### Ph.D. in Computer Science
 
 **University of Science and Technology of China (USTC)**
-Hefei, China
-2019 – Present
-**Current CGPA:** 3.71/4.00
+Hefei, China | 2019 – Present
 
-My doctoral research focuses on generative AI, computer vision, and diffusion-based image synthesis.
+* Current CGPA: **3.71/4.00**
+* Research focus: Generative AI, computer vision, diffusion models, and multimodal intelligence
+* Expected graduation: **October 2026**
+* Fully funded by the **Chinese Scholarship Council (CSC)**
 
 ### M.S. in Computer Science
 
 **The Islamia University of Bahawalpur (IUB)**
-Bahawalpur, Pakistan
-2016 – Apr. 2018
-**CGPA:** 3.67/4.00
+Bahawalpur, Pakistan | 2016 – April 2018
 
-**Thesis:** *Efficient Crypto-Stegnano Technique for Colored Image Protection*
-
-Published research including work in *IEEE Access*.
+* CGPA: **3.67/4.00**
+* Research-based Master's program
+* Thesis: *Efficient Crypto-Steganography Technique for Colored Image Protection*
+* Published two research papers, including a paper in **IEEE Access**
 
 ### B.S. in Computer Science
 
 **The Islamia University of Bahawalpur (IUB)**
-Bahawalpur, Pakistan
-2011 – Sep. 2015
-**CGPA:** 3.92/4.00
+Bahawalpur, Pakistan | 2011 – September 2015
 
-Graduated with **1st position among 1,120 students**.
-
-**Final-Year Project:** *Radiologic X-Ray Image Enhancer & Analyzer (RXIEA)*
-
-## Research & Professional Experience
-
-### Ph.D. Candidate
-
-**University of Science and Technology of China (USTC)**
-Hefei, China
-Present
-
-* Conducting research in generative artificial intelligence and computer vision.
-* Developing text-to-image generation frameworks using diffusion models.
-* Working on controllable facial expression and multi-attribute image synthesis.
-* Researching identity-preserving generation and multimodal visual understanding.
-* Developing research frameworks including **FaceExpr**, **DiffAgeX**, and **SecureFace**.
-* Exploring interdisciplinary applications of generative AI for human welfare and public safety.
-
-### Junior Researcher
-
-**The Islamia University of Bahawalpur (IUB)**
-Bahawalpur, Pakistan
-Apr. 2017 – Sep. 2019
-
-* Developed research-oriented software applications using C#, Java, and MATLAB.
-* Worked with Accord.NET, AForge.NET, OpenCV, OpenSSL, OpenMP, and MPI.
-* Conducted research in image processing, video security, distributed analytics, cryptography, and machine learning.
-* Contributed to research involving CCTV privacy, medical image processing, IoT systems, and formal software specification.
-* Designed algorithms for lightweight encryption, object detection, and video anonymization.
-
-### Research Assistant (Part-Time)
-
-**The Developers Software Company**
-Bahawalpur, Pakistan
-Aug. 2018 – Present
-
-* Conducted research in image analytics for medical X-ray defect detection.
-* Developed IoT algorithms for joint routing and energy-aware message scheduling.
-* Performed data modelling and analytics for vehicular geolocation systems.
-
-### Visiting Lecturer (Part-Time)
-
-**National College of Science and Information Technology (NACSIT)**
-Bahawalpur, Pakistan
-Feb. 2017 – 2019
-
-* Delivered Computer Graphics courses to undergraduate and postgraduate students.
-* Supervised student projects involving desktop and web-based applications.
-
-### Lecturer
-
-**Glims Institute of Modern Studies**
-Bahawalpur, Pakistan
-Apr. 2016 – 2019
-
-* Taught Computer Graphics, Databases, Distributed Databases, and Advanced Object-Oriented Programming.
-* Designed course material and supervised software development projects.
-
-### Visiting Lecturer (Part-Time)
-
-**The Islamia University of Bahawalpur (IUB)**
-Bahawalpur, Pakistan
-Feb. 2016 – 2019
-
-* Taught Computer Graphics, Distributed Computing, Databases, and programming languages including C#, C++, Java, and Python.
-* Taught Web Application Development using PHP and JavaScript.
-* Supervised undergraduate and postgraduate software development projects.
-
-### Programmer — Apprenticeship
-
-**Fauji Fertilizer Company Ltd.**
-Rawalpindi, Pakistan
-Jun. 2015 – Feb. 2016
-
-* Worked as a member of the web development team.
-* Contributed to the FFC Meal and Foot website.
-* Assisted with enterprise programming workflows.
-* Gained practical experience with SAP modules and organizational IT systems.
+* CGPA: **3.92/4.00**
+* **1st Position among 1,120 students**
+* Final-year project: *Radiologic X-Ray Image Enhancer & Analyzer (RXIEA)*
+* Technologies included C#, C++, Java, PHP, HTML/CSS, and JavaFX
 
 ## Publications
 
 ### First-Author Publications
 
-**FaceExpr: Personalized Facial Expression Generation via Attention-Focused U-Net Feature Fusion in Diffusion Models**
-*M. S. Afgan, B. Liu, M. N. Asghar, W. Khalid, K. Zou, D. Sheng*
-**Information Fusion**, 2026.
-Q1 Journal — JIF 17.4
+**M. S. Afgan**, B. Liu, M. N. Asghar, W. Khalid, K. Zou, D. Sheng.
+*"FaceExpr: Personalized Facial Expression Generation via Attention-Focused U-Net Feature Fusion in Diffusion Models."*
+**Information Fusion**, Vol. 103, 103431, 2026.
+**Q1 — JIF: 17.4**
 
-**DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion**
-*M. S. Afgan, B. Liu, W. Khalid, et al.*
+**M. S. Afgan**, B. Liu, W. Khalid, et al.
+*"DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion."*
 **IEEE Transactions on Circuits and Systems for Video Technology**, 2026.
-Accepted. Q1 Journal — JIF 10.8
+**Accepted — Q1, JIF: 10.8**
 
-**SecureFace: A Controlled Deepfake Generation Framework for Exposing Detector Vulnerabilities**
-*M. S. Afgan, B. Liu, A. Shifa, M. N. Asghar*
+**M. S. Afgan**, B. Liu, A. Shifa, M. N. Asghar.
+*"SecureFace: A Controlled Deepfake Generation Framework for Exposing Detector Vulnerabilities."*
 **Cyber-RCI 2025**, University of Galway, Ireland.
 
-**ViDiExPo: Video-Supervised Disentanglement with Interaction-Aware Fusion for Controllable Expression and Pose in Diffusion Models**
-*M. S. Afgan, B. Liu, W. Khalid, et al.*
+**M. S. Afgan**, B. Liu, W. Khalid, et al.
+*"ViDiExPo: Video-Supervised Disentanglement with Interaction-Aware Fusion for Controllable Expression and Pose in Diffusion Models."*
 **Neurocomputing**, 2026.
-Under Review.
+**Under Review**
 
-### Co-Authored Publications
+### Co-Author Publications
 
-**Bridging the Sky and Ground: Towards View-Invariant Feature Learning for Aerial-Ground Person Re-Identification**
-*W. Khalid, B. Liu, X. Li, M. Waqas, M. S. Afgan*
-**IEEE/CVF International Conference on Computer Vision (ICCV), 2025.**
+W. Khalid, B. Liu, X. Li, M. Waqas, **M. S. Afgan**.
+*"Bridging the Sky and Ground: Towards View-Invariant Feature Learning for Aerial-Ground Person Re-Identification."*
+**ICCV 2025**
 
-**Towards Cross-View Learning for Aerial-Ground Person Re-Identification**
-*W. Khalid, B. Liu, X. Li, Y. Wang, M. S. Afgan*
-**European Conference on Computer Vision (ECCV), 2026.**
-Accepted.
+W. Khalid, B. Liu, X. Li, Y. Wang, **M. S. Afgan**.
+*"Towards Cross-View Learning for Aerial-Ground Person Re-Identification."*
+**ECCV 2026 — Accepted**
 
-**xTAFL: Cross-Time Adaptive Feature Learning for Anytime Person Re-Identification**
-*W. Khalid, B. Liu, X. Li, M. S. Afgan*
-**AAAI Conference on Artificial Intelligence (AAAI), 2026.**
-Under Review.
+W. Khalid, B. Liu, X. Li, **M. S. Afgan**.
+*"xTAFL: Cross-Time Adaptive Feature Learning for Anytime Person Re-Identification."*
+**AAAI 2026 — Under Review**
 
-**Joint Crypto-Stego Scheme for Enhanced Image Protection with Nearest-Centroid Clustering**
-*A. Shifa, M. N. Asghar, M. Fleury, M. S. Afgan, I. Memon, et al.*
-**IEEE Access**, 2018.
+A. Shifa, **M. S. Afgan**, M. N. Asghar, M. Fleury, I. Memon, S. Abdullah.
+*"Joint Crypto-Stego Scheme for Enhanced Image Protection with Nearest-Centroid Clustering."*
+**IEEE Access**, Vol. 6, pp. 16189–16206, 2018.
+**JIF: 3.6**
 
-**Ontology-Based Intelligent Security Framework for Smart Video Surveillance**
-*A. Shifa, M. N. Asghar, M. Fleury, M. S. Afgan*
-**Future Technologies Conference**, 2018.
+A. Shifa, M. N. Asghar, M. Fleury, **M. S. Afgan**.
+*"Ontology-Based Intelligent Security Framework for Smart Video Surveillance."*
+**Future Technologies Conference**, pp. 118–126, 2018.
 
-## Honors & Awards
+## Research Experience
 
-### First Position Among 1,120 Students
+### Ph.D. Candidate
 
-Achieved **1st position** among 1,120 students during the B.S. in Computer Science at The Islamia University of Bahawalpur.
+**University of Science and Technology of China (USTC)**
+School of Cyber Science and Technology, Hefei, China
+**Present**
 
-### Chinese Scholarship Council (CSC)
+* Conducting research on **generative models** with a focus on text-to-image generation using diffusion models.
+* Developed research frameworks including **FaceExpr, DiffAgeX, ViDiExPo, and SecureFace**.
+* Investigating identity-preserving and controllable image synthesis.
+* Working on interdisciplinary research connecting generative AI with **human welfare and public safety**.
 
-Fully funded Ph.D. scholarship at the **University of Science and Technology of China (USTC)**.
+### Junior Researcher
 
-### Academic Excellence
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan | April 2017 – September 2019
 
-Graduated with a **3.92/4.00 CGPA** in B.S. Computer Science and achieved the highest academic standing in the cohort.
+* Developed research-oriented software using C#, Java, and MATLAB.
+* Worked with Accord.NET, AForge.NET, OpenCV, OpenSSL, OpenMP, and MPI.
+* Conducted R&D in image processing, video security, distributed analytics, cryptography, and machine learning.
+* Contributed to research involving CCTV privacy, medical image processing, IoT systems, and formal software specification.
+* Designed algorithms for lightweight encryption, object detection, and video anonymization.
 
-## Certifications & Professional Development
+### Research Assistant — Part-Time
 
-### Chinese Language / International Training
+**The Developers Software Company**
+Bahawalpur, Pakistan | August 2018 – Present
 
-Participated in international academic and professional development activities during graduate study in China.
+* Conducted research in image analytics for medical X-ray defect detection.
+* Developed IoT algorithms for joint routing and energy-aware message scheduling.
+* Performed data modeling and analytics for vehicular geolocation systems.
 
-## Academic & Teaching Experience
+### Visiting Lecturer — Part-Time
 
-I have extensive teaching and mentoring experience in computer science, including:
+**National College of Science and Information Technology (NACSIT)**
+Bahawalpur, Pakistan | February 2017 – 2019
 
-* Computer Graphics
-* Computer Programming
-* Object-Oriented Programming
-* Databases
-* Distributed Databases
-* Distributed Computing
-* Web Application Development
-* Software Development
-* Machine Learning
-* Image Processing
+* Taught Computer Graphics to undergraduate and postgraduate students.
+* Supervised student projects involving desktop and web-based applications.
 
-I have also supervised undergraduate and postgraduate student projects in desktop, web, and research-oriented software development.
+### Lecturer
+
+**Glims Institute of Modern Studies**
+Bahawalpur, Pakistan | April 2016 – 2019
+
+* Taught Computer Graphics, Databases, Distributed Databases, and Advanced Object-Oriented Programming.
+* Designed course material and supervised software development projects.
+
+### Visiting Lecturer — Part-Time
+
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan | February 2016 – 2019
+
+* Taught Computer Graphics, Distributed Computing, Databases, C#, C++, Java, Python, PHP, JavaScript, and Web Application Development.
+* Supervised Bachelor's and Master's final-year projects.
+* Mentored students in computer science and application development.
+
+### Programmer — Apprenticeship
+
+**Fauji Fertilizer Company Ltd.**
+Rawalpindi, Pakistan | June 2015 – February 2016
+
+* Worked as part of the web development team for the FFC Meal and Foot website.
+* Assisted with programming and internal system workflows.
+* Gained experience with SAP modules and enterprise IT systems.
 
 ## Technical Skills
 
-**Programming:**
-Python, C++, C#, Java, MATLAB, PHP, JavaScript
+**Programming:** C#, C++, Java, Python, MATLAB, PHP, JavaScript
 
-**Computer Vision & AI:**
-PyTorch, OpenCV, Diffusion Models, GANs, VAEs, Transformers, Deep Learning, Machine Learning
+**Deep Learning & AI:** PyTorch, Diffusion Models, GANs, VAEs, Transformers, Vision-Language Models
 
-**Research Areas:**
-Generative AI, Computer Vision, Image Synthesis, Multimodal Learning, Self-Supervised Learning, Vision-Language Models, Deepfake Detection
+**Computer Vision:** OpenCV, Image Processing, Object Detection, Facial Analysis, Video Analytics
 
-**Software & Systems:**
-Linux, Git, OpenMP, MPI, OpenSSL, Accord.NET, AForge.NET
+**Research Areas:** Generative AI, Self-Supervised Learning, Multimodal Learning, Computer Vision, Deepfake Detection, Privacy-Preserving AI
 
-## Selected Research Projects
+**Other Technologies:** OpenSSL, OpenMP, MPI, Accord.NET, AForge.NET, JavaFX
 
-### FaceExpr
+## Honors & Awards
 
-Personalized facial expression generation using attention-focused U-Net feature fusion within diffusion models.
+### 1st Position — B.S. Computer Science
 
-[View project on GitHub](https://github.com/MSAfganUSTC/FaceExpr)
+**The Islamia University of Bahawalpur**
+Graduated with a CGPA of **3.92/4.00** and ranked **1st among 1,120 students**.
 
-### DiffAgeX
+### Academic Excellence Scholarship
 
-Identity-consistent multi-attribute facial synthesis using adaptive residual fusion.
+**The Islamia University of Bahawalpur**
+Awarded for outstanding undergraduate academic performance.
 
-[View project on GitHub](https://github.com/MSAfganUSTC/DiffAgeX)
+### National Grassroots ICT Research Initiative (NGIRI)
 
-### ViDiExPo
+**National ICT R&D Fund, Pakistan**
 
-Video-supervised disentanglement with interaction-aware fusion for controllable expression and pose generation.
+Research funding supporting the final-year project *Radiologic X-Ray Image Enhancer & Analyzer (RXIEA)*.
 
-[View project on GitHub](https://github.com/MSAfganUSTC/ViDiExPo)
+### Best Academic / Research Recognition
 
-## Research Philosophy
+Recognized for research contributions in computer vision, image processing, cryptography, and generative AI.
 
-My research goal is to develop **robust, controllable, and responsible generative AI systems** that can move beyond synthetic demonstrations toward meaningful real-world applications.
+## Certifications & Training
 
-I am particularly interested in research at the intersection of **generative AI, computer vision, multimodal intelligence, privacy, security, and human welfare**.
+* **Chinese Proficiency Test (HSK)**
+* **ANSO International Training Course in Automotive Technology**
+* **Programming Competition Certificate — Second Position**, IEEE UCET, 2018
+
+## Academic & Professional Interests
+
+I am interested in interdisciplinary research at the intersection of **generative artificial intelligence, computer vision, human welfare, and public safety**.
+
+My broader interests include developing reliable and responsible AI systems capable of understanding, generating, and manipulating visual information while preserving identity, privacy, and societal values.
+
+## Personal Interests
+
+* Exploring different cultures, heritage sites, and traditions
+* Walking and trekking
+* Visiting mountainous regions
+* Watching movies and documentaries
+* Following developments in technology and artificial intelligence
+* Cooking and experimenting with different cuisines
 
 ## Contact
 
 **Muhammad Sher Afgan**
-Ph.D. Candidate
+Computer Vision & Generative AI Researcher
 University of Science and Technology of China (USTC)
-Hefei, China
+Hefei, Anhui, China
 
-**Email:** [msafgan@mail.ustc.edu.cn](mailto:msafgan@mail.ustc.edu.cn)
+Email: **[msafgan@mail.ustc.edu.cn](mailto:msafgan@mail.ustc.edu.cn)**
 
-**GitHub:** [MSAfganUSTC](https://github.com/MSAfganUSTC)
+GitHub: **MSAfganUSTC**
 
-**ORCID:** [0000-0002-0925-1557](https://orcid.org/0000-0002-0925-1557)
+ORCID: **0000-0002-0925-1557**
