@@ -2,15 +2,15 @@
 
 # Basic Site Settings
 
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "Muhammad Sher Afgan"
-title_separator          : "-"
-name                     : &name "Muhammad Sher Afgan"
-description              : &description "Muhammad Sher Afgan - Computer Vision and Generative AI Researcher"
-url                      : "https://msafganustc.github.io"
-baseurl                  : ""
-repository               : "MSAfganUSTC/MSAfganUSTC.github.io"
+locale: "en-US"
+site_theme: "default"
+title: "Muhammad Sher Afgan"
+title_separator: "-"
+name: &name "Muhammad Sher Afgan"
+description: &description "Muhammad Sher Afgan - Computer Vision and Generative AI Researcher"
+url: "https://msafganustc.github.io"
+baseurl: ""
+repository: "MSAfganUSTC/MSAfganUSTC.github.io"
 
 # Site Author
 
@@ -18,141 +18,141 @@ author:
 
 # Biographic information
 
-avatar           : "profile.png"
-name             : "Muhammad Sher Afgan"
-pronouns         :
-bio              : "Computer Vision & Generative AI Researcher"
-location         : "Hefei, China"
-employer         : "University of Science and Technology of China (USTC)"
-uri              : "https://msafganustc.github.io"
-email : "msafgan@mail.ustc.edu.cn"
+avatar: "profile.png"
+name: "Muhammad Sher Afgan"
+pronouns:
+bio: "Computer Vision & Generative AI Researcher"
+location: "Hefei, China"
+employer: "University of Science and Technology of China (USTC)"
+uri: "https://msafganustc.github.io"
+email: "[msafgan@mail.ustc.edu.cn](mailto:msafgan@mail.ustc.edu.cn)"
 
 # Academic websites
 
-academia         :
-arxiv            :
-googlescholar    :
-inspire-hep      :
-impactstory      :
-orcid            : "https://orcid.org/0000-0002-0925-1557"
-semantic         :
-ssrn             :
-pubmed           :
-researchgate     :
-scopus           :
-zotero           :
+academia:
+arxiv:
+googlescholar:
+inspire-hep:
+impactstory:
+orcid: "https://orcid.org/0000-0002-0925-1557"
+semantic:
+ssrn:
+pubmed:
+researchgate:
+scopus:
+zotero:
 
 # Repositories and software development
 
-bitbucket        :
-codepen          :
-dribbble         :
-github           : "MSAfganUSTC"
-kaggle           :
-stackoverflow    :
+bitbucket:
+codepen:
+dribbble:
+github: "MSAfganUSTC"
+kaggle:
+stackoverflow:
 
 # Social media
 
-artstation       :
-bluesky          :
-facebook         :
-flickr           :
-foursquare       :
-goodreads        :
-google_plus      :
-keybase          :
-instagram        :
-lastfm           :
-linkedin         :
-mastodon         :
-medium           :
-pinterest        :
-soundcloud       :
-steam            :
-telegram         :
-tumblr           :
-twitter          :
-vine             :
-weibo            :
-wikipedia        :
-xing             :
-youtube          :
-zhihu            :
+artstation:
+bluesky:
+facebook:
+flickr:
+foursquare:
+goodreads:
+google_plus:
+keybase:
+instagram:
+lastfm:
+linkedin:
+mastodon:
+medium:
+pinterest:
+soundcloud:
+steam:
+telegram:
+tumblr:
+twitter:
+vine:
+weibo:
+wikipedia:
+xing:
+youtube:
+zhihu:
 
 # Publication Category
 
 publication_category:
 books:
-title: 'Books'
+title: "Books"
 manuscripts:
-title: 'Journal Articles'
+title: "Journal Articles"
 conferences:
-title: 'Conference Papers'
+title: "Conference Papers"
 
 # Site Settings
 
-teaser                   :
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
+teaser:
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
 
 comments:
-provider               :
+provider:
 disqus:
-shortname            :
+shortname:
 discourse:
-server               :
+server:
 facebook:
-appid                :
-num_posts            :
-colorscheme          :
+appid:
+num_posts:
+colorscheme:
 
 staticman:
-allowedFields          : ['name', 'email', 'url', 'message']
-branch                 : "gh-pages"
-commitMessage          : "New comment."
-filename               : comment-{@timestamp}
-format                 : "yml"
-moderation             : true
-path                   : "_data/comments/{options.slug}"
-requiredFields         : ['name', 'email', 'message']
+allowedFields: ['name', 'email', 'url', 'message']
+branch: "gh-pages"
+commitMessage: "New comment."
+filename: comment-{@timestamp}
+format: "yml"
+moderation: true
+path: "_data/comments/{options.slug}"
+requiredFields: ['name', 'email', 'message']
 transforms:
-email                : "md5"
+email: "md5"
 generatedFields:
 date:
-type               : "date"
+type: "date"
 options:
-format           : "iso8601"
+format: "iso8601"
 
 atom_feed:
-hide                   : false
-path                   :
+hide: false
+path:
 
 # SEO Related
 
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
 
 # Social Sharing
 
 twitter:
-username               : &twitter
+username: MSAfganUSTC
 
 facebook:
-username               :
-app_id                 :
-publisher              :
+username:
+app_id:
+publisher:
 
-og_image                 :
-og_description           : "Muhammad Sher Afgan - Computer Vision and Generative AI Researcher"
+og_image:
+og_description:
 
 social:
-type                   : "Person"
-name                   : "Muhammad Sher Afgan"
+type: "Person"
+name: "Muhammad Sher Afgan"
 links:
 - "https://github.com/MSAfganUSTC"
 - "https://orcid.org/0000-0002-0925-1557"
@@ -160,9 +160,9 @@ links:
 # Analytics
 
 analytics:
-provider               : "false"
+provider: "false"
 google:
-tracking_id          :
+tracking_id:
 
 # Reading Files
 
