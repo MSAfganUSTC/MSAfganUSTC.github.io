@@ -4,7 +4,6 @@ title: "Muhammad Sher Afgan"
 author_profile: true
 ---
 
-# Muhammad Sher Afgan
 
 **Computer Vision & Generative AI Researcher**
 
