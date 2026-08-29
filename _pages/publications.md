@@ -1,9 +1,8 @@
 ---
-title: "Publications"
+title: false
 permalink: /publications/
 author_profile: true
 ---
-
 # Publications
 ## First-Author Publications
 
