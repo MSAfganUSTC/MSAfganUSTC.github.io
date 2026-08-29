@@ -143,7 +143,7 @@ author_profile: true
 </div>
 
 **Muhammad Sher Afgan**, Bin Liu, Kai Zou, Wajahat Khalid, Dianmo Sheng, Mamoona Naveed Asghar.  
-*Neurocomputing*, 2026, , **(Under Review)**.  
+**Neurocomputing**, 2026,**(Under Review)**.  
 **Q1 · Impact Factor: 6.7**
 
 ---
