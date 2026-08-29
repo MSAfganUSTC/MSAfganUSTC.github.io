@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: false
 permalink: /publications/
 author_profile: true
 ---
@@ -42,7 +41,7 @@ author_profile: true
 </div>
 
 **Muhammad Sher Afgan**, Bin Liu, Mamoona Naveed Asghar, Wajahat Khalid, Kai Zou, Dianmo Sheng.  
-*Information Fusion*, Vol. 125, Article 103431, 2026.  
+**Information Fusion**, Vol. 125, Article 103431, 2026.  
 **Q1 · Impact Factor: 17.4**
 
 ---
@@ -78,8 +77,8 @@ author_profile: true
 </div>
 
 **Muhammad Sher Afgan**, Bin Liu, Wajahat Khalid, Kai Zou, Tianyi Wei, Mamoona Naveed Asghar.  
-*IEEE Transactions on Circuits and Systems for Video Technology*, 2026.  
-**Accepted · DOI: 10.1109/TCSVT.2026.3729343**  
+**IEEE Transactions on Circuits and Systems for Video Technology**, 2026.  
+Accepted · DOI: 10.1109/TCSVT.2026.3729343 
 **Q1 · Impact Factor: 10.8**
 
 ---
@@ -149,11 +148,30 @@ author_profile: true
 
 **Muhammad Sher Afgan**, Bin Liu, Kai Zou, Wajahat Khalid, Dianmo Sheng, Mamoona Naveed Asghar.  
 *SSRN Preprint*, 2026.  
-**DOI: 10.2139/ssrn.6985056**
+DOI: 10.2139/ssrn.6985056
+**Q1 · Impact Factor: 6.7**
 
 ---
 
 ## Co-Author Publications
+<div style="margin-bottom: 0.45em;">
+  <h3 style="display:inline; color:#0969da;">
+    xTAFL: Cross-Time Adaptive Feature Learning for Anytime Person Re-Identification
+  </h3>
+
+  <details style="display:inline-block; margin-left:8px;">
+    <summary style="display:inline; cursor:pointer; color:#0969da; font-size:0.8em;">
+      [Cite]
+    </summary>
+
+<pre></pre>
+
+  </details>
+</div>
+
+Wajahat Khalid, Bin Liu, Xulin Li, **Muhammad Sher Afgan**.
+**Under Review**
+
 <div style="margin-bottom: 0.45em;">
   <h3 style="display:inline; color:#0969da;">
     Towards Cross-View Learning for Aerial-Ground Person Re-Identification
