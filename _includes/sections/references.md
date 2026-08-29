@@ -19,23 +19,13 @@
     <img src="/images/references/mamoona-naveed-asghar.jpg" alt="Dr. Mamoona Naveed Asghar" loading="lazy">
     <div class="reference-card__content">
       <h3><a href="https://research.universityofgalway.ie/en/persons/mamoona-asghar/" target="_blank" rel="noopener">Dr. Mamoona Naveed Asghar</a></h3>
-      <p class="reference-role">Senior Lecturer · School of Computer Science</p>
-      <p>University of Galway</p>
+      <p class="reference-role">Assistant Professor · Supervisor of Doctorate and Master's Candidates </p>
+      <p>School of Computer Science, University of Galway</p>
       <p><a href="mailto:mamoona.asghar@universityofgalway.ie">mamoona.asghar@universityofgalway.ie</a></p>
       <p class="no-pdf"><a href="https://research.universityofgalway.ie/en/persons/mamoona-asghar/" target="_blank" rel="noopener">View Profile</a></p>
     </div>
   </article>
 
-  <article class="reference-card">
-    <img src="/images/references/amna-shifa.jpg" alt="Dr. Amna Shifa" loading="lazy">
-    <div class="reference-card__content">
-      <h3><a href="https://loop.frontiersin.org/people/3474107/overview" target="_blank" rel="noopener">Dr. Amna Shifa</a></h3>
-      <p class="reference-role">Assistant Professor · Department of Artificial Intelligence</p>
-      <p>The Islamia University of Bahawalpur, Pakistan</p>
-      <p><a href="mailto:amna.shifa@universityofgalway.ie">amna.shifa@universityofgalway.ie</a></p>
-      <p class="no-pdf"><a href="https://loop.frontiersin.org/people/3474107/overview" target="_blank" rel="noopener">View Profile</a></p>
-    </div>
-  </article>
 
   <article class="reference-card">
     <img src="/images/references/tianyi-wei.jpg" alt="Dr. Tianyi Wei" loading="lazy">
@@ -48,3 +38,14 @@
     </div>
   </article>
 </div>
+
+ <article class="reference-card">
+    <img src="/images/references/amna-shifa.jpg" alt="Dr. Amna Shifa" loading="lazy">
+    <div class="reference-card__content">
+      <h3><a href="https://loop.frontiersin.org/people/3474107/overview" target="_blank" rel="noopener">Dr. Amna Shifa</a></h3>
+      <p class="reference-role">Assistant Professor · Department of Artificial Intelligence</p>
+      <p>The Islamia University of Bahawalpur, Pakistan</p>
+      <p><a href="mailto:amna.shifa@universityofgalway.ie">amna.shifa@universityofgalway.ie</a></p>
+      <p class="no-pdf"><a href="https://loop.frontiersin.org/people/3474107/overview" target="_blank" rel="noopener">View Profile</a></p>
+    </div>
+  </article>
