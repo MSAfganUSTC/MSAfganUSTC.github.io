@@ -1,7 +1,7 @@
 ---
+title: "Research & Work Experience"
 permalink: /experience/
 author_profile: true
-title: false
 ---
 
 ## University of Science and Technology of China (USTC)
