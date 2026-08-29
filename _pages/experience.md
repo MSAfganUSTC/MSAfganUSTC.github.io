@@ -1,5 +1,5 @@
 ---
-title: "Research & Work Experience"
+title: false
 permalink: /experience/
 author_profile: true
 ---
