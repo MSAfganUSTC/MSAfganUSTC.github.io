@@ -10,15 +10,26 @@ baseurl: ""
 repository: "MSAfganUSTC/MSAfganUSTC.github.io"
 
 author:
-  avatar: "profile.png"
-  name: "Muhammad Sher Afgan"
-  bio: "Computer Vision & Generative AI Researcher"
-  location: "Hefei, China"
-  employer: "University of Science and Technology of China (USTC)"
-  uri: "https://msafganustc.github.io"
-  email: "msafgan@mail.ustc.edu.cn"
-  orcid: "https://orcid.org/0000-0002-0925-1557"
-  github: "MSAfganUSTC"
+  avatar           : "profile.png"
+  bio              : "Computer Vision & Generative AI Researcher | Machine Learning & Deep Learning"
+  location         : "Hefei, China"
+  employer         : "University of Science and Technology of China (USTC)"
+  uri              : "https://msafganustc.github.io"
+  email            : "msafgan@mail.ustc.edu.cn"
+  phone            : "+86 13083402573"
+
+  # Academic websites
+  googlescholar    : "https://scholar.google.com.pk/citations?hl=en&user=EYOfbFOZuxcC"
+  orcid            : "https://orcid.org/0000-0002-0925-1557"
+  ssrn             : "https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=7429663"
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57195982653"  
+
+  # Repositories and software development
+  github           : "MSAfganUSTC"
+
+  # Social media
+  whatsapp         : "/images/whatsapp-qr.png"
+  wechat           : "/images/wechat-qr.png"
 
 publication_category:
   manuscripts:
