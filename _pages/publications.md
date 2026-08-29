@@ -74,8 +74,7 @@ author_profile: true
 </div>
 
 **Muhammad Sher Afgan**, Bin Liu, Wajahat Khalid, Kai Zou, Tianyi Wei, Mamoona Naveed Asghar.  
-**IEEE Transactions on Circuits and Systems for Video Technology**, 2026.  
-Accepted · DOI: 10.1109/TCSVT.2026.3729343 
+**IEEE Transactions on Circuits and Systems for Video Technology**, 2026, **(Accepted)**.  
 **Q1 · Impact Factor: 10.8**
 
 ---
@@ -144,8 +143,7 @@ Accepted · DOI: 10.1109/TCSVT.2026.3729343
 </div>
 
 **Muhammad Sher Afgan**, Bin Liu, Kai Zou, Wajahat Khalid, Dianmo Sheng, Mamoona Naveed Asghar.  
-*SSRN Preprint*, 2026.  
-DOI: 10.2139/ssrn.6985056
+*SSRN Preprint*, 2026, **(Under Review)**.
 **Q1 · Impact Factor: 6.7**
 
 ---
@@ -167,7 +165,7 @@ DOI: 10.2139/ssrn.6985056
 </div>
 
 Wajahat Khalid, Bin Liu, Xulin Li, **Muhammad Sher Afgan**.
-**Under Review**
+**(Under Review)**
 
 <div style="margin-bottom: 0.45em;">
   <h3 style="display:inline; color:#0969da;">
