@@ -1,7 +1,7 @@
 ---
 
 permalink: /
-title: "Muhammad Sher Afgan"
+title: "About Me"
 author_profile: true
 redirect_from:
 
@@ -42,16 +42,15 @@ My current research agenda includes **facial attribute synthesis, missing-person
 * Multimodal Learning
 * Responsible AI
 
-## Research Highlights
+## Highlights
 
-* Ph.D. Candidate at **University of Science and Technology of China (USTC)**
-* Current CGPA: **3.71/4.00**
+* **Ph.D. Candidate**, University of Science and Technology of China (USTC)
+* **CGPA: 3.71/4.00**
 * First-author publications in **Information Fusion** and other research venues
-* Research experience in **generative AI, image processing, video security, cryptography, IoT, and machine learning**
-* Extensive experience in **research, teaching, software development, and academic supervision**
-* Developing AI frameworks for **identity-preserving generation, facial attribute synthesis, controllable image generation, and deepfake analysis**
+* Research experience in generative AI, image processing, video security, cryptography, IoT, and machine learning
+* Extensive experience in research, teaching, software development, and academic supervision
 
-## Selected Publications
+## Selected Research
 
 ### FaceExpr
 
@@ -87,21 +86,21 @@ My current research agenda includes **facial attribute synthesis, missing-person
 
 ## Education
 
-### Ph.D. in Computer Science / Cyberspace Security
+### Ph.D. Candidate
 
 **University of Science and Technology of China (USTC)**
 Hefei, China | 2019 – Present
 
-**CGPA:** 3.71/4.00
+CGPA: **3.71/4.00**
 
-Research areas include computer vision, generative AI, diffusion models, multimodal learning, and deep learning.
+Research in computer vision, generative AI, diffusion models, multimodal learning, and deep learning.
 
 ### M.S. in Computer Science
 
 **The Islamia University of Bahawalpur (IUB)**
 Bahawalpur, Pakistan | 2016 – Apr. 2018
 
-**CGPA:** 3.67/4.00
+CGPA: **3.67/4.00**
 
 Thesis: *Efficient Crypto-Steganographic Technique for Colored Image Protection.*
 
@@ -110,7 +109,7 @@ Thesis: *Efficient Crypto-Steganographic Technique for Colored Image Protection.
 **The Islamia University of Bahawalpur (IUB)**
 Bahawalpur, Pakistan | 2011 – Sep. 2015
 
-**CGPA:** 3.92/4.00
+CGPA: **3.92/4.00**
 
 Graduated with **1st Position among 1120 students**.
 
@@ -120,35 +119,46 @@ Final-year project: *Radiologic X-Ray Image Enhancer & Analyzer (RXIEA).*
 
 ### University of Science and Technology of China (USTC)
 
-**Ph.D. Candidate** | Hefei, China | Present
+**Ph.D. Candidate**
+Hefei, China | Present
 
-* Conducting research on **generative models**, particularly text-to-image generation using diffusion models.
-* Developing research frameworks for facial attribute synthesis and controllable image generation.
+* Conducting research on generative models, particularly text-to-image generation using diffusion models.
+* Developing frameworks for facial attribute synthesis and controllable image generation.
 * Working on interdisciplinary applications of generative AI for human welfare and public safety.
 
 ### The Islamia University of Bahawalpur (IUB)
 
-**Joiner Researcher** | Bahawalpur, Pakistan | Apr. 2017 – Sep. 2019
+**Junior Researcher**
+Bahawalpur, Pakistan | Apr. 2017 – Sep. 2019
 
-Conducted research and development in image processing, video security, distributed analytics, cryptography, machine learning, IoT systems, and software engineering.
+* Conducted R&D in image processing, video security, distributed analytics, cryptography, and machine learning.
+* Developed research-oriented applications using C#, Java, and MATLAB.
+* Worked with OpenCV, Accord.NET, AForge.NET, OpenSSL, OpenMP, and MPI.
 
 ### The Developers Software Company
 
-**Research Assistant (Part-Time)** | Bahawalpur, Pakistan | Aug. 2018 – Present
+**Research Assistant (Part-Time)**
+Bahawalpur, Pakistan | Aug. 2018 – Present
 
-Worked on image analytics, medical X-ray defect detection, IoT algorithms, vehicular geolocation, and data modelling.
+* Conducted research in medical X-ray image analytics.
+* Developed IoT algorithms for routing and energy-aware message scheduling.
+* Worked on vehicular geolocation and data modelling.
 
-### National College of Science and Information Technology (NACSIT)
+### National College of Science and Information Technology
 
-**Visiting Lecturer (Part-Time)** | Bahawalpur, Pakistan | Feb. 2017 – 2019
+**Visiting Lecturer (Part-Time)**
+Bahawalpur, Pakistan | Feb. 2017 – 2019
 
-Taught Computer Graphics and supervised undergraduate and postgraduate software projects.
+* Taught Computer Graphics.
+* Supervised undergraduate and postgraduate software projects.
 
 ### Glims Institute of Modern Studies
 
-**Lecturer** | Bahawalpur, Pakistan | Apr. 2016 – 2019
+**Lecturer**
+Bahawalpur, Pakistan | Apr. 2016 – 2019
 
-Taught Computer Graphics, Databases, Distributed Databases, and Advanced Object-Oriented Programming.
+* Taught Computer Graphics, Databases, Distributed Databases, and Advanced OOP.
+* Designed course material and supervised software-development projects.
 
 ## Technical Skills
 
@@ -158,12 +168,13 @@ Taught Computer Graphics, Databases, Distributed Databases, and Advanced Object-
 
 **Programming:** Python, C#, C++, Java, MATLAB, PHP, JavaScript
 
-**Computer Vision Libraries:** OpenCV, AForge.NET, Accord.NET
+**Libraries & Frameworks:** OpenCV, AForge.NET, Accord.NET
 
 **Security & Systems:** Cryptography, Steganography, OpenSSL, MPI, OpenMP, IoT
 
 ## Academic Profile
 
-[View Publications](/publications/) · [View Curriculum Vitae](/cv/) · [View GitHub](https://github.com/MSAfganUSTC) · [View ORCID](https://orcid.org/0000-0002-0925-1557)
-
-For a complete academic record, please see my **[Curriculum Vitae](/cv/)**.
+* [Publications](/publications/)
+* [Curriculum Vitae](/cv/)
+* [GitHub](https://github.com/MSAfganUSTC)
+* [ORCID](https://orcid.org/0000-0002-0925-1557)
