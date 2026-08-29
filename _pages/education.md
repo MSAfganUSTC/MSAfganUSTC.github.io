@@ -1,7 +1,7 @@
 ---
+title: "Education"
 permalink: /education/
 author_profile: true
-title: false
 ---
 
 ## Ph.D. Candidate in School of Cyber Science and Technology
