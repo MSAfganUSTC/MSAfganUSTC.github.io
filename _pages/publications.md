@@ -143,7 +143,7 @@ author_profile: true
 </div>
 
 **Muhammad Sher Afgan**, Bin Liu, Kai Zou, Wajahat Khalid, Dianmo Sheng, Mamoona Naveed Asghar.  
-*SSRN Preprint*, 2026, **(Under Review)**.
+*Neurocomputing*, 2026, , **(Under Review)**.  
 **Q1 · Impact Factor: 6.7**
 
 ---
@@ -151,7 +151,7 @@ author_profile: true
 ## Co-Author Publications
 <div style="margin-bottom: 0.45em;">
   <h3 style="display:inline; color:#0969da;">
-    xTAFL: Cross-Time Adaptive Feature Learning for Anytime Person Re-Identification
+    Dynamic Cross-Time Feature Learning for Anytime Person Re-Identification
   </h3>
 
   <details style="display:inline-block; margin-left:8px;">
@@ -165,11 +165,12 @@ author_profile: true
 </div>
 
 Wajahat Khalid, Bin Liu, Xulin Li, **Muhammad Sher Afgan**.
+*Association for the Advancement of Artificial Intelligence (AAAI)*, 2027
 **(Under Review)**
 
 <div style="margin-bottom: 0.45em;">
   <h3 style="display:inline; color:#0969da;">
-    Towards Cross-View Learning for Aerial-Ground Person Re-Identification
+    MCVL: Multi-Space Cross-View Learning for Aerial-Ground Person Re-Identification
   </h3>
 
   <details style="display:inline-block; margin-left:8px;">
@@ -183,6 +184,7 @@ Wajahat Khalid, Bin Liu, Xulin Li, **Muhammad Sher Afgan**.
 </div>
 
 Wajahat Khalid, Bin Liu, Xulin Li, Muhammad Waqas, **Muhammad Sher Afgan**.
+*European Conference on Computer Vision (ECCV)*, 2026
 **Accepted — Not Yet Online**
 
 
