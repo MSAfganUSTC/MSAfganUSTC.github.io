@@ -13,55 +13,47 @@ Hefei, China | **Present**
 - Working on interdisciplinary research connecting generative AI with **human welfare and public safety**.
 
 ## The Islamia University of Bahawalpur (IUB)
-**Joiner Researcher**  
-Bahawalpur, Pakistan | **April 2017 – September 2019**
+**Visiting Lecturer**  
+Bahawalpur, Pakistan | **February 2016 – April 2018**
 
-- Developed research-oriented software applications using C#, Java, and MATLAB.
-- Worked with Accord.NET, AForge.NET, OpenCV, OpenSSL, OpenMP, and MPI.
-- Conducted R&D in image processing, video security, distributed analytics, cryptography, and machine learning.
-- Contributed to research involving CCTV privacy, medical image processing, IoT systems, and formal software specification.
-- Designed algorithms for lightweight encryption, object detection, and video anonymisation.
+- Served as a Visiting Lecturer in the **Department of Computer Science & IT**.
+- Acquired over two years of university-level teaching experience.
+- Demonstrated strong teaching, management, and professional skills.
 
-## The Developers Software Company
-**Research Assistant (Part-Time)**  
-Bahawalpur, Pakistan | **August 2018 – Present**
-
-- Conducted research in image analytics for medical X-ray defect detection.
-- Developed IoT algorithms for joint routing and energy-aware message scheduling.
-- Performed data modelling and analytics for vehicular geolocation systems.
+[**View Teaching Experience Certificate**](/images/experience-iub-visiting-lecturer.jpg){:target="_blank"}
 
 ## National College of Science and Information Technology (NACSIT)
-**Visiting Lecturer (Part-Time)**  
-Bahawalpur, Pakistan | **February 2017 – 2019**
+**Visiting Lecturer**  
+Bahawalpur, Pakistan | **February 2017 – April 2018**
 
-- Delivered Computer Graphics courses to undergraduate and postgraduate students.
-- Supervised student projects involving desktop and web-based applications.
+- Taught **Computer Science subjects** to MCS students as a Visiting Lecturer.
+- Performed teaching responsibilities at the postgraduate level.
 
 [**View Experience Certificate**](/images/experience-nacsit-visiting-lecturer.jpg){:target="_blank"}
 
 ## Glim Institute of Modern Studies
-**Lecturer**  
-Bahawalpur, Pakistan | **April 2016 – 2019**
+**Faculty Member**  
+Bahawalpur, Pakistan | **April 2016 – April 2018**
 
-- Taught Computer Graphics, Databases, Distributed Databases, and Advanced OOP (Java) at Master's level.
-- Designed course material and supervised software-development projects.
+- Served as a faculty member teaching students of **MCS, BSCS, and BSIT** programs.
+- Delivered computer science instruction at undergraduate and postgraduate levels.
 
 [**View Experience Certificate**](/images/experience-glims-lecturer.jpg){:target="_blank"}
 
-## The Islamia University of Bahawalpur (IUB)
-**Visiting Lecturer (Part-Time)**  
-Bahawalpur, Pakistan | **February 2016 – 2019**
+## The Developers Company Private Limited
+**Project Manager**  
+Bahawalpur, Pakistan | **January 2015 – October 2015**
 
-- Taught undergraduate and Master's courses in Computer Graphics, Distributed Computing, Databases, C#, C++, Java, Python, PHP, JavaScript, and Web Application Development.
-- Supervised final-year projects involving desktop and web application development.
-- Mentored students in computer science and application development.
+- Worked as a **Project Manager** in the software development domain.
+- Contributed to software development and organizational activities.
 
-[**View Experience Certificate**](/images/experience-iub-visiting-lecturer.jpg){:target="_blank"}
+[**View Experience Certificate**](/images/experience-developers-research-assistant.jpg){:target="_blank"}
 
-## Fauji Fertilizer Company Ltd.
-**Programmer — Apprenticeship**  
-Rawalpindi, Pakistan | **June 2015 – February 2016**
+## Fauji Fertilizer Company Limited (FFC)
+**IT Intern**  
+Plant Site Goth Machhi, Pakistan | **June 2015 – July 2015**
 
-- Worked with the web development team on the FFC Meal and Foot website.
-- Assisted with programming and internal system workflows.
-- Gained practical exposure to SAP modules and enterprise IT infrastructure.
+- Successfully completed an internship with the **FFC IT Department** at Plant Site Goth Machhi.
+- Gained practical exposure to an industrial IT environment.
+
+[**View Internship Certificate**](/images/experience-ffc-internship.jpg){:target="_blank"}
