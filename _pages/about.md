@@ -1,47 +1,169 @@
 ---
+
 permalink: /
 title: "Muhammad Sher Afgan"
 author_profile: true
+redirect_from:
+
+* /about/
+* /about.html
+
 ---
 
 # Muhammad Sher Afgan
 
-**Computer Vision & Generative AI Researcher**
+**Ph.D. Candidate | Computer Vision & Generative AI Researcher**
 
-Hefei, Anhui, China  
+Hefei, Anhui, China
 University of Science and Technology of China (USTC)
 
 [Email](mailto:msafgan@mail.ustc.edu.cn) · [GitHub](https://github.com/MSAfganUSTC) · [ORCID](https://orcid.org/0000-0002-0925-1557)
 
 ## About Me
 
-I am a Ph.D. candidate at the School of Cyber Science and Technology, University of Science and Technology of China (USTC), working in **Computer Vision and Generative AI**.
+I am a Ph.D. candidate at the **School of Cyber Science and Technology, University of Science and Technology of China (USTC)**, conducting research in **Computer Vision and Generative AI**.
 
 My research focuses on **self-supervised learning, Transformer architectures, diffusion models, GANs, VAEs, controllable image synthesis, identity-preserving generation, text-to-image generation, multimodal understanding, and responsible AI**.
 
-My current research agenda includes facial attribute synthesis, missing-person reconstruction, deepfake detection, and interdisciplinary applications of generative AI for human welfare and public safety.
+My current research agenda includes **facial attribute synthesis, missing-person reconstruction, deepfake detection, and interdisciplinary applications of generative AI for human welfare and public safety**.
 
 ## Research Interests
 
-- Computer Vision
-- Generative AI
-- Diffusion Models
-- Vision-Language Models
-- Self-Supervised Learning
-- Transformer Architectures
-- Controllable Image Synthesis
-- Identity-Preserving Generation
-- Text-to-Image Generation
-- Deepfake Detection
-- Multimodal Learning
-- Responsible AI
+* Computer Vision
+* Generative AI
+* Diffusion Models
+* Vision-Language Models
+* Self-Supervised Learning
+* Transformer Architectures
+* Controllable Image Synthesis
+* Identity-Preserving Generation
+* Text-to-Image Generation
+* Deepfake Detection
+* Multimodal Learning
+* Responsible AI
 
-## Highlights
+## Research Highlights
 
-- Ph.D. candidate at **USTC**, Hefei, China
-- Current CGPA: **3.71/4.00**
-- First-author publications in **Information Fusion** and other research venues
-- Research experience spanning generative AI, image processing, video security, cryptography, IoT, and machine learning
-- Former researcher and lecturer with extensive teaching and software-development experience
+* Ph.D. Candidate at **University of Science and Technology of China (USTC)**
+* Current CGPA: **3.71/4.00**
+* First-author publications in **Information Fusion** and other research venues
+* Research experience in **generative AI, image processing, video security, cryptography, IoT, and machine learning**
+* Extensive experience in **research, teaching, software development, and academic supervision**
+* Developing AI frameworks for **identity-preserving generation, facial attribute synthesis, controllable image generation, and deepfake analysis**
 
-For a complete academic record, see my **[CV](/cv/)**.
+## Selected Publications
+
+### FaceExpr
+
+**Personalized Facial Expression Generation via Attention-Focused U-Net Feature Fusion in Diffusion Models**
+
+*M. S. Afgan, B. Liu, M. N. Asghar, W. Khalid, K. Zou, D. Sheng*
+
+**Information Fusion**, 2026.
+
+### DiffAgeX
+
+**Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion**
+
+*M. S. Afgan, B. Liu, W. Khalid, et al.*
+
+**IEEE Transactions on Circuits and Systems for Video Technology**, 2026. Accepted.
+
+### SecureFace
+
+**A Controlled Deepfake Generation Framework for Exposing Detector Vulnerabilities**
+
+*M. S. Afgan, B. Liu, A. Shifa, M. N. Asghar*
+
+**Cyber-RCI 2025**, University of Galway, Ireland.
+
+### ViDiExPo
+
+**Video-Supervised Disentanglement with Interaction-Aware Fusion for Controllable Expression and Pose in Diffusion Models**
+
+*M. S. Afgan, B. Liu, K. Zou, W. Khalid, D. Sheng, M. N. Asghar*
+
+**Neurocomputing**, 2026. Under Review.
+
+## Education
+
+### Ph.D. in Computer Science / Cyberspace Security
+
+**University of Science and Technology of China (USTC)**
+Hefei, China | 2019 – Present
+
+**CGPA:** 3.71/4.00
+
+Research areas include computer vision, generative AI, diffusion models, multimodal learning, and deep learning.
+
+### M.S. in Computer Science
+
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan | 2016 – Apr. 2018
+
+**CGPA:** 3.67/4.00
+
+Thesis: *Efficient Crypto-Steganographic Technique for Colored Image Protection.*
+
+### B.S. in Computer Science
+
+**The Islamia University of Bahawalpur (IUB)**
+Bahawalpur, Pakistan | 2011 – Sep. 2015
+
+**CGPA:** 3.92/4.00
+
+Graduated with **1st Position among 1120 students**.
+
+Final-year project: *Radiologic X-Ray Image Enhancer & Analyzer (RXIEA).*
+
+## Professional Experience
+
+### University of Science and Technology of China (USTC)
+
+**Ph.D. Candidate** | Hefei, China | Present
+
+* Conducting research on **generative models**, particularly text-to-image generation using diffusion models.
+* Developing research frameworks for facial attribute synthesis and controllable image generation.
+* Working on interdisciplinary applications of generative AI for human welfare and public safety.
+
+### The Islamia University of Bahawalpur (IUB)
+
+**Joiner Researcher** | Bahawalpur, Pakistan | Apr. 2017 – Sep. 2019
+
+Conducted research and development in image processing, video security, distributed analytics, cryptography, machine learning, IoT systems, and software engineering.
+
+### The Developers Software Company
+
+**Research Assistant (Part-Time)** | Bahawalpur, Pakistan | Aug. 2018 – Present
+
+Worked on image analytics, medical X-ray defect detection, IoT algorithms, vehicular geolocation, and data modelling.
+
+### National College of Science and Information Technology (NACSIT)
+
+**Visiting Lecturer (Part-Time)** | Bahawalpur, Pakistan | Feb. 2017 – 2019
+
+Taught Computer Graphics and supervised undergraduate and postgraduate software projects.
+
+### Glims Institute of Modern Studies
+
+**Lecturer** | Bahawalpur, Pakistan | Apr. 2016 – 2019
+
+Taught Computer Graphics, Databases, Distributed Databases, and Advanced Object-Oriented Programming.
+
+## Technical Skills
+
+**Deep Learning:** PyTorch, Transformers, Diffusion Models, GANs, VAEs
+
+**Computer Vision:** Image Processing, Video Analysis, Object Detection, Facial Analysis, Deepfake Detection
+
+**Programming:** Python, C#, C++, Java, MATLAB, PHP, JavaScript
+
+**Computer Vision Libraries:** OpenCV, AForge.NET, Accord.NET
+
+**Security & Systems:** Cryptography, Steganography, OpenSSL, MPI, OpenMP, IoT
+
+## Academic Profile
+
+[View Publications](/publications/) · [View Curriculum Vitae](/cv/) · [View GitHub](https://github.com/MSAfganUSTC) · [View ORCID](https://orcid.org/0000-0002-0925-1557)
+
+For a complete academic record, please see my **[Curriculum Vitae](/cv/)**.
