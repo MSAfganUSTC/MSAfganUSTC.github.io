@@ -10,7 +10,7 @@ author_profile: true
 Hefei, Anhui, China  
 University of Science and Technology of China (USTC)
 
-[Email](mailto:msafgan@mail.ustc.edu.cn) · [GitHub](https://github.com/MSAfganUSTC) · [ORCID](https://orcid.org/0000-0002-0925-1557)
+[Email](mailto:msafgan@mail.ustc.edu.cn) · [Phone](tel:+86XXXXXXXXXXX) · [GitHub](https://github.com/MSAfganUSTC) · [ORCID](https://orcid.org/0000-0002-0925-1557) · [WhatsApp QR](/images/whatsapp-qr.png) · [WeChat QR](/images/wechat-qr.png)
 
 ## About Me
 
