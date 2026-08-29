@@ -169,3 +169,211 @@ a:focus,
     height: 90px;
   }
 }
+
+/* Publication rows: visual thumbnail on the left, academic metadata on the right. */
+.publication-card {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.publication-card:first-of-type {
+  padding-top: 0.35rem;
+}
+
+.publication-card--no-image {
+  grid-template-columns: 1fr;
+}
+
+.publication-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 132px;
+  padding: 0.35rem;
+  border: 1px solid #eceff1;
+  border-radius: 7px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.publication-card__media img {
+  display: block;
+  width: 100%;
+  height: 145px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.publication-card__body {
+  min-width: 0;
+}
+
+.publication-card__title {
+  margin: 0 0 0.45rem;
+  font-size: 1.08em;
+  line-height: 1.35;
+}
+
+.publication-card__authors,
+.publication-card__venue,
+.publication-card__metric {
+  margin: 0.24rem 0;
+  text-align: left !important;
+  line-height: 1.42;
+}
+
+.publication-card__metric {
+  color: #555d63;
+}
+
+.publication-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 0.6rem;
+}
+
+.publication-action,
+.publication-action:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 30px;
+  padding: 0.28rem 0.68rem;
+  border-radius: 999px;
+  background: #f1f3f5;
+  color: #4da6ff !important;
+  font-size: 0.88em;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none !important;
+}
+
+.publication-action:hover,
+.publication-action:focus {
+  background: #e9ecef;
+  color: #4da6ff !important;
+  text-decoration: none !important;
+}
+
+.publication-cite {
+  display: inline-block;
+  position: relative;
+}
+
+.publication-cite > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.publication-cite > summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-cite pre {
+  max-width: min(680px, 80vw);
+  margin-top: 0.55rem;
+  padding: 0.8rem;
+  border: 1px solid #e2e5e8;
+  border-radius: 6px;
+  background: #f7f8f9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.82em;
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .publication-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card__media {
+    width: min(100%, 360px);
+    min-height: 0;
+  }
+
+  .publication-card__media img {
+    height: auto;
+    max-height: 220px;
+  }
+}
+
+/* Academic service rows: compact two-column layout inspired by academic CV sites. */
+.academic-service-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.academic-service-row {
+  display: grid;
+  grid-template-columns: minmax(130px, 165px) minmax(0, 1fr);
+  gap: 1.15rem;
+  align-items: start;
+}
+
+.academic-service-label {
+  font-weight: 700;
+  color: #2f3337;
+  line-height: 1.45;
+}
+
+.academic-service-content {
+  min-width: 0;
+  line-height: 1.48;
+}
+
+.academic-service-content > div {
+  margin-bottom: 0.18rem;
+  text-align: left;
+}
+
+.service-year {
+  color: #666d73;
+  white-space: nowrap;
+}
+
+/* Visitor map shown beneath the author/sidebar information; excluded from PDF. */
+.visitor-map-widget {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.visitor-map-widget__title {
+  margin-bottom: 0.65rem;
+  color: #6b7075;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.visitor-map-widget__map {
+  width: 100%;
+  overflow: hidden;
+}
+
+.visitor-map-widget__map img,
+.visitor-map-widget__map iframe,
+.visitor-map-widget__map canvas,
+.visitor-map-widget__map svg {
+  display: block;
+  max-width: 100% !important;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .academic-service-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .academic-service-label {
+    margin-top: 0.15rem;
+  }
+}
