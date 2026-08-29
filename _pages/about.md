@@ -16,7 +16,7 @@ The research focuses on generative modeling, visual intelligence, and multimodal
 
 ## Highlights
 
-- First-author publications in leading Q1 journals, including **Information Fusion** and **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, with Journal Impact Factors of **[17.4]** and [10.8], **respectively**
+- First-author publications in leading Q1 journals, including **Information Fusion** and **IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**, with Journal Impact Factors of **[17.4]** and **[10.8]**, respectively
 - Current CGPA: **3.71/4.00**
 - Interdisciplinary research experience across AI, Image Processing, Video Security, Cryptography, and IoT
 - Experience in academic research, university-level teaching, and software development
