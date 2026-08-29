@@ -18,6 +18,13 @@ My work focuses on **generative modeling, visual intelligence, and multimodal le
 - **Trustworthy AI**  
   Deepfake Detection · Responsible AI
 
+## Technical Expertise
+
+**Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate
+
+**Generative AI & Computer Vision:** Diffusion Models · Stable Diffusion / SDXL · Controllable Image Synthesis · Identity-Preserving Generation · U-Net Architectures · Cross-Attention · CLIP · ArcFace . Controlled Backbone Adoption
+
+**Multimodal Learning & Model Development:** Text–Image Conditioning · Multimodal Representation Learning · Model Fine-Tuning · Distributed / Multi-GPU Training · Model Evaluation
 ## Current Status & Focus
 
 I have successfully completed the blind review of my Ph.D. dissertation, receiving approval from **all five external reviewers**, and have fulfilled the coursework, degree, and publication requirements for the Ph.D., with a finalized CGPA of **3.71/4.00**. I am currently awaiting the formal announcement of my dissertation defense, expected in **September 2026**, after which I will proceed with the degree application. In parallel, I am preparing for the defense and continuing research on **generative and multimodal intelligence, identity-preserving synthesis, visual understanding, and security-oriented AI**, including the ongoing revision of **ViDiExPo**.
