@@ -10,14 +10,12 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 3em;
+  margin-top: 1em;
   width: 100%;
   clear: both;
 
-  /* keep footer in normal document flow so custom widgets do not overlap content */
   height: auto;
 
-  /* keep the footer on the bottom of the page */
   position: fixed;
   bottom: 0;
 
@@ -31,9 +29,9 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 0;
     max-width: 100%;
-    padding: 0 1em 1em;
+    padding: 0.5em 1em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -68,6 +66,8 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .page__footer-follow {
@@ -79,8 +79,8 @@
 
   li {
     display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
     text-transform: uppercase;
