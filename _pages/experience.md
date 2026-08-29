@@ -9,7 +9,7 @@ author_profile: true
 Hefei, China | **Present**
 
 - Conducting research on **generative models**, with a focus on text-to-image generation using diffusion models.
-- Developed research frameworks including **FaceExpr**, **DiffAgeX**, **ViDiExPo** and **SecureFace**.
+- Developed research frameworks including **FaceExpr**, **DiffAgeX**, **ViDiExPo**, and **SecureFace**.
 - Working on interdisciplinary research connecting generative AI with **human welfare and public safety**.
 
 ## The Islamia University of Bahawalpur (IUB)
@@ -37,12 +37,16 @@ Bahawalpur, Pakistan | **February 2017 – 2019**
 - Delivered Computer Graphics courses to undergraduate and postgraduate students.
 - Supervised student projects involving desktop and web-based applications.
 
-## Glims Institute of Modern Studies
+[**View Experience Certificate**](/images/experience-nacsit-visiting-lecturer.jpg){:target="_blank"}
+
+## Glim Institute of Modern Studies
 **Lecturer**  
 Bahawalpur, Pakistan | **April 2016 – 2019**
 
 - Taught Computer Graphics, Databases, Distributed Databases, and Advanced OOP (Java) at Master's level.
 - Designed course material and supervised software-development projects.
+
+[**View Experience Certificate**](/images/experience-glims-lecturer.jpg){:target="_blank"}
 
 ## The Islamia University of Bahawalpur (IUB)
 **Visiting Lecturer (Part-Time)**  
@@ -51,6 +55,8 @@ Bahawalpur, Pakistan | **February 2016 – 2019**
 - Taught undergraduate and Master's courses in Computer Graphics, Distributed Computing, Databases, C#, C++, Java, Python, PHP, JavaScript, and Web Application Development.
 - Supervised final-year projects involving desktop and web application development.
 - Mentored students in computer science and application development.
+
+[**View Experience Certificate**](/images/experience-iub-visiting-lecturer.jpg){:target="_blank"}
 
 ## Fauji Fertilizer Company Ltd.
 **Programmer — Apprenticeship**  
