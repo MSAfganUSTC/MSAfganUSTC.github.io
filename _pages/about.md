@@ -8,13 +8,13 @@ The research focuses on generative modeling, visual intelligence, and multimodal
 
 ## Research Interests
 
-- Machine Learning & Deep Learning
+- **Machine Learning & Deep Learning**  
   Computer Vision · Generative AI · Self-Supervised Learning · Transformer Architectures
 
-- Generative & Multimodal Intelligence
-  Generative Modeling · Diffusion Models · Controllable Image Synthesis · Identity-Preserving Generation · Text-to-Image Generation · Vision-Language Models ·        Multimodal Learning
+- **Generative & Multimodal Intelligence**  
+  Generative Modeling · Diffusion Models · Controllable Image Synthesis · Identity-Preserving Generation · Text-to-Image Generation · Vision-Language Models · Multimodal Learning
 
-- Trustworthy AI
+- **Trustworthy AI**  
   Deepfake Detection · Responsible AI
 
 ## Highlights
