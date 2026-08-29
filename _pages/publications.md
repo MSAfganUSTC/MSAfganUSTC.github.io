@@ -4,7 +4,7 @@ title: false
 permalink: /publications/
 author_profile: true
 ---
-
+# Publications
 {% if site.author.googlescholar %}
 <div class="wordwrap">
   You can also find my articles on
