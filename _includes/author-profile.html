@@ -94,7 +94,22 @@
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow icon-pad-right" aria-hidden="true"></i>Stackoverflow</a></li>
       {% endif %}      
+      <!-- WhatsApp / WeChat QR Codes -->
+      {% if author.whatsapp %}
+        <li>
+          <a href="{{ author.whatsapp | relative_url }}" target="_blank" rel="noopener">
+            <i class="fab fa-fw fa-whatsapp icon-pad-right" aria-hidden="true"></i>WhatsApp QR
+          </a>
+        </li>
+      {% endif %}
 
+      {% if author.wechat %}
+        <li>
+          <a href="{{ author.wechat | relative_url }}" target="_blank" rel="noopener">
+            <i class="fab fa-fw fa-weixin icon-pad-right" aria-hidden="true"></i>WeChat QR
+          </a>
+        </li>
+      {% endif %}
       <!-- Font Awesome icons / Social media -->
       {% if author.artstation %}
         <li><a href="https://www.artstation.com/{{ author.artstation }}"><i class="fab fa-fw fa-artstation icon-pad-right" aria-hidden="true"></i>Artstation</a></li>
