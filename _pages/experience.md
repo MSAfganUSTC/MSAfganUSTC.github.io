@@ -9,7 +9,7 @@ author_profile: true
 Hefei, China | **Present**
 
 - Conducting research on **generative models**, with a focus on text-to-image generation using diffusion models.
-- Developed research frameworks including **FaceExpr**, **DiffAgeX**, **ViDiExPo**, and **SecureFace**.
+- Developed research frameworks including **FaceExpr**<sup><a href="https://github.com/MSAfganUSTC/FaceExpr" target="_blank" rel="noopener">[1]</a></sup>, **DiffAgeX**<sup><a href="https://github.com/MSAfganUSTC/DiffAgeX" target="_blank" rel="noopener">[2]</a></sup>, **ViDiExPo**<sup><a href="https://github.com/MSAfganUSTC/ViDiExPo" target="_blank" rel="noopener">[3]</a></sup>, and **SecureFace**<sup><a href="https://ieeexplore.ieee.org/document/11385159" target="_blank" rel="noopener">[4]</a></sup>.
 - Working on interdisciplinary research connecting generative AI with **human welfare and public safety**.
 
 ## The Islamia University of Bahawalpur (IUB)
