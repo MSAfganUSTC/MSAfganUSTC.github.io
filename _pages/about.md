@@ -1,8 +1,4 @@
----
-permalink: /
-title: "Muhammad Sher Afgan"
-author_profile: true
----
+
 Research in Machine Learning and Deep Learning, with a specialized focus on Generative AI and Computer Vision, at the University of Science and Technology of China (USTC).
 
 The research focuses on generative modeling, visual intelligence, and multimodal learning, with particular interest in controllable and identity-preserving generation, diffusion models, and vision-language systems. Current work addresses facial attribute synthesis, missing-person reconstruction, and deepfake detection, with applications in human welfare and public safety.
