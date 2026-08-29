@@ -7,6 +7,7 @@ title: false
 <div id="cv-content" class="cv-document">
 
 <div class="pdf-only cv-pdf-header">
+  <img class="cv-pdf-profile" src="{{ '/images/' | append: site.author.avatar | relative_url }}" alt="{{ site.author.name | default: site.name }}">
   <h1>{{ site.author.name | default: site.name }}</h1>
   <p>{{ site.author.bio }}</p>
   <p>

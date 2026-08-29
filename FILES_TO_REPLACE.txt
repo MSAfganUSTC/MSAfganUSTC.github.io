@@ -1,0 +1,23 @@
+Combined V7 update: publication images/cards + Academic Services bold labels
+
+REPLACE:
+_includes/sections/publications.md
+_includes/sections/services.md
+_sass/layout/_custom.scss
+assets/js/cv-download.js
+_pages/about.md
+
+ADD / ENSURE PRESENT:
+images/FaceExpr.png
+images/DiffAgeX.png
+images/SecureFace.png
+images/ViDiExPo.png
+images/MCVL.png
+images/Bridging the Sky and Ground.png
+images/Joint Crypto-Stego.png
+images/Ontology-Based Intelligent Security Framework.png
+
+Notes:
+- Dynamic Cross-Time remains text-only because it is under review.
+- Publication thumbnails use a fixed 4:3 display frame with object-fit: contain, so source-image dimensions do not distort the layout.
+- Journal Reviewer, Conference Reviewer, and Teaching & Mentoring are explicitly bold.

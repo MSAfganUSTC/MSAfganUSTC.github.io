@@ -170,10 +170,13 @@ a:focus,
   }
 }
 
-/* Publication rows: visual thumbnail on the left, academic metadata on the right. */
+/* Publication rows: visual thumbnail on the left, academic metadata on the right.
+   Every thumbnail is rendered inside the same 4:3 frame. Source images may have
+   completely different dimensions; object-fit: contain preserves each figure
+   without stretching, cropping, or changing the row geometry. */
 .publication-card {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 1rem;
   align-items: start;
   padding: 1rem 0;
@@ -192,8 +195,9 @@ a:focus,
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 132px;
-  padding: 0.35rem;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 0.4rem;
   border: 1px solid #eceff1;
   border-radius: 7px;
   background: #fff;
@@ -203,7 +207,9 @@ a:focus,
 .publication-card__media img {
   display: block;
   width: 100%;
-  height: 145px;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   object-position: center;
 }
@@ -294,13 +300,14 @@ a:focus,
   }
 
   .publication-card__media {
-    width: min(100%, 360px);
-    min-height: 0;
+    width: min(100%, 380px);
+    aspect-ratio: 4 / 3;
   }
 
   .publication-card__media img {
-    height: auto;
-    max-height: 220px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -317,8 +324,9 @@ a:focus,
   align-items: start;
 }
 
-.academic-service-label {
-  font-weight: 700;
+.academic-service-label,
+.academic-service-label strong {
+  font-weight: 700 !important;
   color: #2f3337;
   line-height: 1.45;
 }

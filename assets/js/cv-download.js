@@ -4,15 +4,14 @@
   /*
    * Dynamic CV generator.
    *
-   * This intentionally does NOT use html2canvas/html2pdf. The earlier
-   * screenshot-based approach could create a valid but blank PDF in some
-   * browsers. This version reads the live one-page CV DOM and writes real
-   * text into jsPDF, so the downloaded PDF always reflects the currently
-   * rendered website content.
+   * The PDF is built from the currently rendered one-page CV, so website edits
+   * are reflected automatically. It uses text-based jsPDF output and embeds
+   * the profile/reference photographs directly into the PDF.
    */
 
   const JSPDF_URL = "https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js";
   const PDF_FILENAME = "Muhammad_Sher_Afgan_CV.pdf";
+  const imageCache = new Map();
   let libraryPromise = null;
   let generating = false;
 
@@ -52,6 +51,41 @@
       .trim();
   }
 
+  function blobToDataUrl(blob) {
+    return new Promise(function (resolve, reject) {
+      const reader = new FileReader();
+      reader.onload = function () { resolve(reader.result); };
+      reader.onerror = function () { reject(reader.error || new Error("Unable to read image.")); };
+      reader.readAsDataURL(blob);
+    });
+  }
+
+  async function loadImageData(src) {
+    if (!src) return null;
+    const absoluteUrl = new URL(src, window.location.href).href;
+    if (imageCache.has(absoluteUrl)) return imageCache.get(absoluteUrl);
+
+    const promise = fetch(absoluteUrl, { cache: "force-cache" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("Unable to load image: " + absoluteUrl);
+        return response.blob();
+      })
+      .then(blobToDataUrl)
+      .catch(function (error) {
+        console.warn(error);
+        return null;
+      });
+
+    imageCache.set(absoluteUrl, promise);
+    return promise;
+  }
+
+  function imageFormat(dataUrl) {
+    const match = /^data:image\/(png|jpe?g)/i.exec(String(dataUrl || ""));
+    if (!match) return "PNG";
+    return match[1].toLowerCase() === "png" ? "PNG" : "JPEG";
+  }
+
   function createPdfWriter(jsPDF) {
     const doc = new jsPDF({ unit: "pt", format: "a4", orientation: "portrait" });
     const pageWidth = doc.internal.pageSize.getWidth();
@@ -77,33 +111,96 @@
       doc.setTextColor.apply(doc, color || [40, 40, 40]);
     }
 
-    function wrappedLines(text, width, size) {
-      font("normal", size || 9.5);
-      return doc.splitTextToSize(cleanText(text), width || contentWidth);
+    function getImageFit(dataUrl, maxWidth, maxHeight) {
+      let width = maxWidth;
+      let height = maxHeight;
+      try {
+        const properties = doc.getImageProperties(dataUrl);
+        const ratio = properties.width / properties.height;
+        width = maxWidth;
+        height = width / ratio;
+        if (height > maxHeight) {
+          height = maxHeight;
+          width = height * ratio;
+        }
+      } catch (error) {
+        // Keep the fallback box size if image metadata cannot be read.
+      }
+      return { width: width, height: height };
     }
 
-    function writeHeader(name, bio, contact) {
+    function addImageFit(dataUrl, x, top, maxWidth, maxHeight) {
+      if (!dataUrl) return { width: 0, height: 0 };
+      const fit = getImageFit(dataUrl, maxWidth, maxHeight);
+      try {
+        doc.addImage(dataUrl, imageFormat(dataUrl), x, top, fit.width, fit.height, undefined, "FAST");
+      } catch (error) {
+        console.warn("Unable to add an image to the PDF.", error);
+        return { width: 0, height: 0 };
+      }
+      return fit;
+    }
+
+    function writeHeader(name, bio, contact, profileImage) {
+      const hasPhoto = Boolean(profileImage);
+      const photoMaxWidth = 76;
+      const photoMaxHeight = 92;
+      const gap = 16;
+      const textWidth = hasPhoto ? contentWidth - photoMaxWidth - gap : contentWidth;
+
       font("bold", 20, [45, 49, 52]);
-      const nameLines = doc.splitTextToSize(cleanText(name), contentWidth);
-      ensureSpace(nameLines.length * 23 + 45);
-      doc.text(nameLines, pageWidth / 2, y, { align: "center" });
-      y += nameLines.length * 23;
+      const nameLines = doc.splitTextToSize(cleanText(name), textWidth);
+      font("normal", 10.5, [70, 74, 78]);
+      const bioLines = bio ? doc.splitTextToSize(cleanText(bio), textWidth) : [];
+      font("normal", 9.2, [75, 79, 82]);
+      const contactLines = contact ? doc.splitTextToSize(cleanText(contact), textWidth) : [];
 
-      if (bio) {
-        font("normal", 10.5, [70, 74, 78]);
-        const lines = doc.splitTextToSize(cleanText(bio), contentWidth);
-        doc.text(lines, pageWidth / 2, y, { align: "center" });
-        y += lines.length * 14;
+      const textHeight = (nameLines.length * 23) + (bioLines.length * 14) + (contactLines.length * 12) + 8;
+      const blockHeight = Math.max(textHeight, hasPhoto ? photoMaxHeight : 0);
+      ensureSpace(blockHeight + 28);
+
+      const startY = y;
+      if (hasPhoto) {
+        const fit = getImageFit(profileImage, photoMaxWidth, photoMaxHeight);
+        const imageX = pageWidth - marginX - fit.width;
+        addImageFit(profileImage, imageX, startY, photoMaxWidth, photoMaxHeight);
+
+        font("bold", 20, [45, 49, 52]);
+        doc.text(nameLines, marginX, y);
+        y += nameLines.length * 23;
+
+        if (bioLines.length) {
+          font("normal", 10.5, [70, 74, 78]);
+          doc.text(bioLines, marginX, y);
+          y += bioLines.length * 14;
+        }
+
+        if (contactLines.length) {
+          font("normal", 9.2, [75, 79, 82]);
+          doc.text(contactLines, marginX, y);
+          y += contactLines.length * 12;
+        }
+
+        y = Math.max(y, startY + fit.height);
+      } else {
+        font("bold", 20, [45, 49, 52]);
+        doc.text(nameLines, pageWidth / 2, y, { align: "center" });
+        y += nameLines.length * 23;
+
+        if (bioLines.length) {
+          font("normal", 10.5, [70, 74, 78]);
+          doc.text(bioLines, pageWidth / 2, y, { align: "center" });
+          y += bioLines.length * 14;
+        }
+
+        if (contactLines.length) {
+          font("normal", 9.2, [75, 79, 82]);
+          doc.text(contactLines, pageWidth / 2, y, { align: "center" });
+          y += contactLines.length * 12;
+        }
       }
 
-      if (contact) {
-        font("normal", 9.2, [75, 79, 82]);
-        const lines = doc.splitTextToSize(cleanText(contact), contentWidth);
-        doc.text(lines, pageWidth / 2, y, { align: "center" });
-        y += lines.length * 12;
-      }
-
-      y += 8;
+      y += 10;
       doc.setDrawColor(210, 210, 210);
       doc.line(marginX, y, pageWidth - marginX, y);
       y += 18;
@@ -166,6 +263,59 @@
       y += lines.length * lineHeight + 4;
     }
 
+    function writeReferenceCard(imageData, name, details) {
+      const photoMaxWidth = 50;
+      const photoMaxHeight = 62;
+      const gap = 11;
+      const hasImage = Boolean(imageData);
+      const textX = marginX + (hasImage ? photoMaxWidth + gap : 0);
+      const textWidth = contentWidth - (hasImage ? photoMaxWidth + gap : 0);
+      const titleSize = 10.2;
+      const bodySize = 8.9;
+      const titleLineHeight = 13;
+      const bodyLineHeight = 11.5;
+
+      font("bold", titleSize, [48, 52, 56]);
+      const titleLines = doc.splitTextToSize(cleanText(name), textWidth);
+      const wrappedDetails = [];
+      details.forEach(function (detail) {
+        const value = cleanText(detail);
+        if (!value) return;
+        font("normal", bodySize, [55, 58, 61]);
+        wrappedDetails.push(doc.splitTextToSize(value, textWidth));
+      });
+
+      let textHeight = titleLines.length * titleLineHeight + 3;
+      wrappedDetails.forEach(function (lines) {
+        textHeight += lines.length * bodyLineHeight + 2;
+      });
+      const cardHeight = Math.max(hasImage ? photoMaxHeight : 0, textHeight) + 14;
+      ensureSpace(cardHeight + 6);
+
+      const top = y;
+      doc.setDrawColor(229, 231, 233);
+      doc.roundedRect(marginX, top, contentWidth, cardHeight, 4, 4, "S");
+
+      if (hasImage) {
+        const fit = getImageFit(imageData, photoMaxWidth, photoMaxHeight);
+        const imageTop = top + 7 + Math.max(0, (photoMaxHeight - fit.height) / 2);
+        addImageFit(imageData, marginX + 7, imageTop, photoMaxWidth, photoMaxHeight);
+      }
+
+      let textY = top + 15;
+      font("bold", titleSize, [48, 52, 56]);
+      doc.text(titleLines, textX + 7, textY);
+      textY += titleLines.length * titleLineHeight + 2;
+
+      wrappedDetails.forEach(function (lines) {
+        font("normal", bodySize, [55, 58, 61]);
+        doc.text(lines, textX + 7, textY, { lineHeightFactor: 1.28 });
+        textY += lines.length * bodyLineHeight + 2;
+      });
+
+      y = top + cardHeight + 7;
+    }
+
     function writeRule() {
       ensureSpace(12);
       y += 2;
@@ -189,15 +339,16 @@
     }
 
     return {
-      doc,
-      writeHeader,
-      writeSectionHeading,
-      writeSubHeading,
-      writeParagraph,
-      writeBullet,
-      writeRule,
-      writeGap,
-      addPageNumbers
+      doc: doc,
+      writeHeader: writeHeader,
+      writeSectionHeading: writeSectionHeading,
+      writeSubHeading: writeSubHeading,
+      writeParagraph: writeParagraph,
+      writeBullet: writeBullet,
+      writeReferenceCard: writeReferenceCard,
+      writeRule: writeRule,
+      writeGap: writeGap,
+      addPageNumbers: addPageNumbers
     };
   }
 
@@ -207,12 +358,54 @@
     return ["DETAILS", "PRE", "SCRIPT", "STYLE", "IMG", "NOSCRIPT"].includes(node.tagName);
   }
 
-  function processElement(node, writer) {
+  async function processReferenceCard(node, writer) {
+    const image = node.querySelector("img");
+    const heading = node.querySelector("h3");
+    const detailNodes = Array.from(node.querySelectorAll("p")).filter(function (item) {
+      return !item.classList.contains("no-pdf");
+    });
+    const imageData = image ? await loadImageData(image.src) : null;
+    writer.writeReferenceCard(
+      imageData,
+      heading ? heading.innerText : "Reference",
+      detailNodes.map(function (item) { return item.innerText; })
+    );
+  }
+
+
+  function processAcademicServiceRow(node, writer) {
+    const label = node.querySelector(".academic-service-label");
+    const content = node.querySelector(".academic-service-content");
+
+    if (label) {
+      writer.writeParagraph(label.innerText, { bold: true, tight: true, size: 9.6 });
+    }
+
+    if (content) {
+      Array.from(content.children).forEach(function (item) {
+        const value = cleanText(item.innerText);
+        if (value) writer.writeParagraph(value, { tight: true, size: 9.2, indent: 10 });
+      });
+      writer.writeGap(4);
+    }
+  }
+
+  async function processElement(node, writer) {
     if (shouldSkip(node)) return;
 
     const tag = node.tagName;
 
     if (node.classList.contains("cv-section-title")) return;
+
+    if (node.classList.contains("reference-card")) {
+      await processReferenceCard(node, writer);
+      return;
+    }
+
+    if (node.classList.contains("academic-service-row")) {
+      processAcademicServiceRow(node, writer);
+      return;
+    }
 
     if (tag === "H1" || tag === "H2" || tag === "H3" || tag === "H4") {
       writer.writeSubHeading(node.innerText, tag === "H2" ? 2 : 3);
@@ -240,20 +433,13 @@
       return;
     }
 
-    if (node.classList.contains("reference-card")) {
-      Array.from(node.children).forEach(function (child) {
-        processElement(child, writer);
-      });
-      writer.writeGap(5);
-      return;
+    const children = Array.from(node.children);
+    for (let i = 0; i < children.length; i += 1) {
+      await processElement(children[i], writer);
     }
-
-    Array.from(node.children).forEach(function (child) {
-      processElement(child, writer);
-    });
   }
 
-  function buildPdfFromCurrentPage(jsPDF) {
+  async function buildPdfFromCurrentPage(jsPDF) {
     const source = document.getElementById("cv-content");
     if (!source) throw new Error("The current page does not contain CV content.");
 
@@ -263,33 +449,41 @@
     let name = "Muhammad Sher Afgan";
     let bio = "";
     let contact = "";
+    let profileImage = null;
 
     if (header) {
       const headerName = header.querySelector("h1");
       const headerParagraphs = header.querySelectorAll("p");
+      const profileNode = header.querySelector(".cv-pdf-profile");
       if (headerName) name = headerName.textContent;
       if (headerParagraphs[0]) bio = headerParagraphs[0].textContent;
       if (headerParagraphs[1]) contact = headerParagraphs[1].textContent;
+      if (profileNode) profileImage = await loadImageData(profileNode.src);
     }
 
-    writer.writeHeader(name, bio, contact);
+    writer.writeHeader(name, bio, contact, profileImage);
 
-    const sections = Array.from(source.querySelectorAll(":scope > .cv-section")).filter(function (section) {
-      return !section.classList.contains("no-pdf");
+    const sections = Array.from(source.children).filter(function (section) {
+      return section.classList && section.classList.contains("cv-section") && !section.classList.contains("no-pdf");
     });
 
-    sections.forEach(function (section) {
-      const titleNode = section.querySelector(":scope > .cv-section-title");
+    for (let s = 0; s < sections.length; s += 1) {
+      const section = sections[s];
+      const titleNode = Array.from(section.children).find(function (child) {
+        return child.classList && child.classList.contains("cv-section-title");
+      });
       const title = titleNode ? titleNode.innerText : (section.getAttribute("data-pdf-title") || "");
       if (title) writer.writeSectionHeading(title);
 
-      Array.from(section.children).forEach(function (child) {
-        if (child === titleNode) return;
-        processElement(child, writer);
-      });
+      const children = Array.from(section.children);
+      for (let i = 0; i < children.length; i += 1) {
+        const child = children[i];
+        if (child === titleNode) continue;
+        await processElement(child, writer);
+      }
 
       writer.writeGap(8);
-    });
+    }
 
     writer.addPageNumbers();
     return writer.doc;
@@ -307,7 +501,7 @@
 
     try {
       const jsPDF = await loadJsPdf();
-      const doc = buildPdfFromCurrentPage(jsPDF);
+      const doc = await buildPdfFromCurrentPage(jsPDF);
       doc.setProperties({
         title: "Muhammad Sher Afgan - Curriculum Vitae",
         subject: "Academic Curriculum Vitae",
