@@ -4,6 +4,14 @@ author_profile: true
 title: false
 ---
 
+<div class="site-language-control no-pdf" aria-label="Website language selector">
+  <div class="site-language-control__label">
+    <i class="fas fa-globe" aria-hidden="true"></i>
+    <span>Language</span>
+  </div>
+  <div id="google_translate_element"></div>
+</div>
+
 <div id="cv-content" class="cv-document">
 
 <div class="pdf-only cv-pdf-header">

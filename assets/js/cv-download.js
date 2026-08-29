@@ -51,13 +51,34 @@
       .trim();
   }
 
-  function blobToDataUrl(blob) {
+  function loadHtmlImage(src) {
     return new Promise(function (resolve, reject) {
-      const reader = new FileReader();
-      reader.onload = function () { resolve(reader.result); };
-      reader.onerror = function () { reject(reader.error || new Error("Unable to read image.")); };
-      reader.readAsDataURL(blob);
+      const image = new Image();
+      image.decoding = "async";
+      image.onload = function () { resolve(image); };
+      image.onerror = function () { reject(new Error("Unable to decode image: " + src)); };
+      image.src = src;
     });
+  }
+
+  function imageToJpegDataUrl(image) {
+    const naturalWidth = image.naturalWidth || image.width || 1;
+    const naturalHeight = image.naturalHeight || image.height || 1;
+    const maxDimension = 1400;
+    const scale = Math.min(1, maxDimension / Math.max(naturalWidth, naturalHeight));
+    const width = Math.max(1, Math.round(naturalWidth * scale));
+    const height = Math.max(1, Math.round(naturalHeight * scale));
+
+    const canvas = document.createElement("canvas");
+    canvas.width = width;
+    canvas.height = height;
+    const context = canvas.getContext("2d", { alpha: false });
+    if (!context) throw new Error("Canvas is unavailable for PDF image conversion.");
+
+    context.fillStyle = "#ffffff";
+    context.fillRect(0, 0, width, height);
+    context.drawImage(image, 0, 0, width, height);
+    return canvas.toDataURL("image/jpeg", 0.92);
   }
 
   async function loadImageData(src) {
@@ -65,25 +86,42 @@
     const absoluteUrl = new URL(src, window.location.href).href;
     if (imageCache.has(absoluteUrl)) return imageCache.get(absoluteUrl);
 
-    const promise = fetch(absoluteUrl, { cache: "force-cache" })
-      .then(function (response) {
-        if (!response.ok) throw new Error("Unable to load image: " + absoluteUrl);
-        return response.blob();
-      })
-      .then(blobToDataUrl)
-      .catch(function (error) {
-        console.warn(error);
-        return null;
-      });
+    const promise = (async function () {
+      try {
+        /*
+         * Fetch the same-origin website image first, decode it in the browser,
+         * then rasterize it to a standard JPEG data URL. This avoids jsPDF
+         * browser-specific PNG/JPEG decoding issues and reliably embeds the
+         * profile/reference photographs in the downloaded PDF.
+         */
+        const response = await fetch(absoluteUrl, {
+          cache: "no-cache",
+          credentials: "same-origin"
+        });
+        if (!response.ok) throw new Error("HTTP " + response.status);
+
+        const blob = await response.blob();
+        const objectUrl = URL.createObjectURL(blob);
+        try {
+          const image = await loadHtmlImage(objectUrl);
+          return imageToJpegDataUrl(image);
+        } finally {
+          URL.revokeObjectURL(objectUrl);
+        }
+      } catch (firstError) {
+        /* Fallback for browsers that reject blob decoding for a cached asset. */
+        try {
+          const image = await loadHtmlImage(absoluteUrl);
+          return imageToJpegDataUrl(image);
+        } catch (secondError) {
+          console.warn("Unable to prepare PDF image:", absoluteUrl, firstError, secondError);
+          return null;
+        }
+      }
+    })();
 
     imageCache.set(absoluteUrl, promise);
     return promise;
-  }
-
-  function imageFormat(dataUrl) {
-    const match = /^data:image\/(png|jpe?g)/i.exec(String(dataUrl || ""));
-    if (!match) return "PNG";
-    return match[1].toLowerCase() === "png" ? "PNG" : "JPEG";
   }
 
   function createPdfWriter(jsPDF) {
@@ -133,7 +171,7 @@
       if (!dataUrl) return { width: 0, height: 0 };
       const fit = getImageFit(dataUrl, maxWidth, maxHeight);
       try {
-        doc.addImage(dataUrl, imageFormat(dataUrl), x, top, fit.width, fit.height, undefined, "FAST");
+        doc.addImage(dataUrl, "JPEG", x, top, fit.width, fit.height, undefined, "MEDIUM");
       } catch (error) {
         console.warn("Unable to add an image to the PDF.", error);
         return { width: 0, height: 0 };
@@ -459,6 +497,13 @@
       if (headerParagraphs[0]) bio = headerParagraphs[0].textContent;
       if (headerParagraphs[1]) contact = headerParagraphs[1].textContent;
       if (profileNode) profileImage = await loadImageData(profileNode.src);
+    }
+
+    /* Fallback to the visible author portrait if the hidden PDF header image
+       could not be loaded for any reason. */
+    if (!profileImage) {
+      const visibleProfile = document.querySelector(".author__avatar img, .author__avatar-image img, img.author__avatar");
+      if (visibleProfile) profileImage = await loadImageData(visibleProfile.currentSrc || visibleProfile.src);
     }
 
     writer.writeHeader(name, bio, contact, profileImage);

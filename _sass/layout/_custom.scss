@@ -385,3 +385,76 @@ a:focus,
     margin-top: 0.15rem;
   }
 }
+
+/* Top language selector. Google Translate provides the language list and
+   translates the complete rendered one-page site in the browser. */
+.site-language-control {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #e4e7ea;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 0.84em;
+  line-height: 1.2;
+}
+
+.site-language-control__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  color: #555d63;
+  font-weight: 600;
+}
+
+.site-language-control__label i {
+  color: #6f777d;
+}
+
+#google_translate_element {
+  min-width: 150px;
+}
+
+#google_translate_element .goog-te-gadget {
+  margin: 0 !important;
+  color: #687078 !important;
+  font-family: inherit !important;
+  font-size: 0.92em !important;
+}
+
+#google_translate_element select.goog-te-combo {
+  min-height: 34px;
+  margin: 0 !important;
+  padding: 0.28rem 0.45rem;
+  border: 1px solid #d9dee2;
+  border-radius: 5px;
+  background: #fff;
+  color: #343a40;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+#google_translate_element select.goog-te-combo:focus {
+  border-color: #9dccfa;
+  outline: 2px solid rgba(77, 166, 255, 0.2);
+  outline-offset: 1px;
+}
+
+@media (max-width: 600px) {
+  .site-language-control {
+    justify-content: flex-start;
+  }
+
+  #google_translate_element {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #google_translate_element select.goog-te-combo {
+    max-width: 100%;
+  }
+}
