@@ -94,22 +94,20 @@
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow icon-pad-right" aria-hidden="true"></i>Stackoverflow</a></li>
       {% endif %}      
-      <!-- WhatsApp / WeChat QR Codes -->
-      {% if author.whatsapp or author.wechat %}
-        <li class="author__qr-codes">
-          {% if author.whatsapp %}
-            <div>
-              <strong>WhatsApp</strong><br>
-              <img src="{{ author.whatsapp | relative_url }}" alt="WhatsApp QR Code">
-            </div>
-          {% endif %}
+            <!-- WhatsApp / WeChat QR Codes -->
+      {% if author.whatsapp %}
+        <li>
+          <a href="{{ author.whatsapp | relative_url }}" target="_blank" rel="noopener">
+            <i class="fab fa-fw fa-whatsapp icon-pad-right" aria-hidden="true"></i>WhatsApp QR
+          </a>
+        </li>
+      {% endif %}
 
-          {% if author.wechat %}
-            <div>
-              <strong>WeChat</strong><br>
-              <img src="{{ author.wechat | relative_url }}" alt="WeChat QR Code">
-            </div>
-          {% endif %}
+      {% if author.wechat %}
+        <li>
+          <a href="{{ author.wechat | relative_url }}" target="_blank" rel="noopener">
+            <i class="fab fa-fw fa-weixin icon-pad-right" aria-hidden="true"></i>WeChat QR
+          </a>
         </li>
       {% endif %}
 
