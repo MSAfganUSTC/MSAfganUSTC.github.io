@@ -1,19 +1,15 @@
 ---
-title: "Research & Work Experience"
 permalink: /experience/
 author_profile: true
 ---
-
-# Research & Work Experience
 
 ## University of Science and Technology of China (USTC)
 **School of Cyber Science and Technology — Ph.D. Candidate**  
 Hefei, China | **Present**
 
 - Conducting research on **generative models**, with a focus on text-to-image generation using diffusion models.
-- Developed research frameworks including **FaceExpr**, **DiffAgeX**, and **SecureFace**.
+- Developed research frameworks including **FaceExpr**, **DiffAgeX**, **ViDiExPo** and **SecureFace**.
 - Working on interdisciplinary research connecting generative AI with **human welfare and public safety**.
-- Research areas include controllable image synthesis, facial attribute generation, identity preservation, and deepfake detection.
 
 ## The Islamia University of Bahawalpur (IUB)
 **Joiner Researcher**  
