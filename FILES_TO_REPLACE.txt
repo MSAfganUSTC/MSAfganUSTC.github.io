@@ -1,0 +1,25 @@
+REPLACE THESE EXISTING FILES
+============================
+_data/navigation.yml
+_includes/sections/about.md
+_includes/sections/awards.md
+_includes/sections/education.md
+_includes/sections/experience.md
+_includes/sections/publications.md
+_includes/sections/services.md
+_pages/about.md
+_pages/certificate.md
+_sass/layout/_custom.scss
+assets/js/cv-download.js
+
+ADD THESE NEW FILES
+===================
+_includes/sections/references.md
+images/references/bin-liu.jpg
+images/references/mamoona-naveed-asghar.jpg
+images/references/amna-shifa.jpg
+images/references/tianyi-wei.jpg
+
+NOTE
+====
+The additional honor/award mentioned in chat is not inserted because its title/date/details were not provided. No award information was invented.

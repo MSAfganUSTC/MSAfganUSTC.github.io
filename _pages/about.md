@@ -39,6 +39,19 @@ title: false
 {% include sections/services.md %}
 </section>
 
+<section id="references" class="cv-section" markdown="1">
+{% include sections/references.md %}
+</section>
+
+<section id="cv-panel" class="cv-section no-pdf">
+  <div class="cv-section-title">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+    <span>Curriculum Vitae</span>
+  </div>
+  <p>Download a PDF generated from the current academic information on this page.</p>
+  <p><a href="/#download-cv" class="cv-download-link"><strong>Download Current CV (PDF)</strong></a></p>
+</section>
+
 </div>
 
 <p id="cv-download-status" class="cv-download-status no-pdf" role="status" aria-live="polite"></p>

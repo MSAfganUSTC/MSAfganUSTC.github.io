@@ -1,4 +1,7 @@
-# Research & Work Experience
+<div class="cv-section-title">
+  <i class="fas fa-briefcase" aria-hidden="true"></i>
+  <span>Research &amp; Work Experience</span>
+</div>
 ## University of Science and Technology of China (USTC)
 **School of Cyber Science and Technology — Ph.D. Candidate**  
 Hefei, China | **Present**

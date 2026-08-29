@@ -1,12 +1,14 @@
-/* Site-wide visual consistency and one-page CV behavior. */
+/* One-page academic site: unified link color, compact typography, section cards, and references. */
+
+/* A deliberately light blue used consistently for every clickable text link. */
 :root,
 html[data-theme="light"],
 html[data-theme="dark"] {
-  --global-link-color: #337ab7;
-  --global-link-color-hover: #337ab7;
-  --global-link-color-visited: #337ab7;
-  --global-masthead-link-color: #337ab7;
-  --global-masthead-link-color-hover: #337ab7;
+  --global-link-color: #4da6ff;
+  --global-link-color-hover: #4da6ff;
+  --global-link-color-visited: #4da6ff;
+  --global-masthead-link-color: #4da6ff;
+  --global-masthead-link-color-hover: #4da6ff;
 }
 
 a,
@@ -14,8 +16,11 @@ a:visited,
 .page__content a,
 .page__content a:visited,
 .author__urls a,
-.author__urls a:visited {
-  color: #337ab7;
+.author__urls a:visited,
+.greedy-nav a,
+.greedy-nav a:visited,
+.cv-document summary {
+  color: #4da6ff !important;
 }
 
 a:hover,
@@ -23,21 +28,31 @@ a:focus,
 .page__content a:hover,
 .page__content a:focus,
 .author__urls a:hover,
-.author__urls a:focus {
-  color: #337ab7;
+.author__urls a:focus,
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.cv-document summary:hover,
+.cv-document summary:focus {
+  color: #4da6ff !important;
 }
 
-/* Slightly smaller, cleaner academic body text on the one-page site. */
+/* Slightly smaller, cleaner academic reading size. */
 .cv-document {
-  font-size: 0.88em;
-  line-height: 1.5;
+  font-size: 0.86em;
+  line-height: 1.48;
 }
 
-/* Justify normal reading text while keeping headings and metadata natural. */
+/* Justified body copy, while headings and short metadata remain naturally aligned. */
 .cv-document p,
 .cv-document li {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.cv-document h2,
+.cv-document h3,
+.cv-document h4 {
+  text-align: left;
 }
 
 .cv-section {
@@ -46,6 +61,81 @@ a:focus,
 
 .cv-section + .cv-section {
   margin-top: 2rem;
+}
+
+/* Major section heading block, matching the user's requested visual style. */
+.cv-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  margin: 0 0 1.05rem;
+  padding: 0.72rem 1rem;
+  border-left: 4px solid #596168;
+  border-radius: 6px;
+  background: #f3f3f3;
+  color: #4d5358;
+  font-size: 1.55em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.cv-section-title i {
+  flex: 0 0 1.15em;
+  width: 1.15em;
+  color: #747b80;
+  font-size: 0.88em;
+  text-align: center;
+}
+
+.cv-section-title span {
+  min-width: 0;
+}
+
+/* Reference cards */
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.reference-card {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding: 0.85rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.reference-card img {
+  display: block;
+  width: 92px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.reference-card__content {
+  min-width: 0;
+}
+
+.reference-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05em;
+  line-height: 1.25;
+}
+
+.reference-card p {
+  margin: 0.22rem 0;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.reference-role {
+  font-weight: 600;
 }
 
 .pdf-only {
@@ -58,76 +148,24 @@ a:focus,
   font-size: 0.85em;
 }
 
-/* The temporary clone used only while generating the PDF. */
-.pdf-rendering {
-  box-sizing: border-box !important;
-  width: 760px !important;
-  max-width: 760px !important;
-  padding: 24px 30px !important;
-  margin: 0 !important;
-  background: #fff !important;
-  color: #222 !important;
-  font-size: 12.5px !important;
-  line-height: 1.45 !important;
+@media (max-width: 760px) {
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-section-title {
+    font-size: 1.4em;
+  }
 }
 
-.pdf-rendering .pdf-only {
-  display: block !important;
-}
+@media (max-width: 430px) {
+  .reference-card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 0.75rem;
+  }
 
-.pdf-rendering .no-pdf,
-.pdf-rendering details {
-  display: none !important;
-}
-
-.pdf-rendering .cv-pdf-header {
-  margin-bottom: 1.4rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid #d9d9d9;
-  text-align: center;
-}
-
-.pdf-rendering .cv-pdf-header h1 {
-  margin: 0 0 0.25rem;
-  font-size: 25px;
-}
-
-.pdf-rendering .cv-pdf-header p {
-  margin: 0.15rem 0;
-  text-align: center;
-}
-
-.pdf-rendering h1,
-.pdf-rendering h2,
-.pdf-rendering h3 {
-  break-after: avoid;
-  page-break-after: avoid;
-  text-align: left;
-}
-
-.pdf-rendering h1 {
-  font-size: 21px;
-}
-
-.pdf-rendering h2 {
-  font-size: 17px;
-  margin-top: 1.2rem;
-}
-
-.pdf-rendering h3 {
-  font-size: 14px;
-}
-
-.pdf-rendering p,
-.pdf-rendering li {
-  orphans: 3;
-  widows: 3;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.pdf-rendering a,
-.pdf-rendering a:visited {
-  color: #337ab7 !important;
-  text-decoration: none;
+  .reference-card img {
+    width: 72px;
+    height: 90px;
+  }
 }

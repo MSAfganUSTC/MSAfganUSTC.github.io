@@ -1,3 +1,8 @@
+<div class="cv-section-title">
+  <i class="fas fa-user" aria-hidden="true"></i>
+  <span>About</span>
+</div>
+
 I am a Ph.D. candidate in Cyberspace Security at <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>. My research is in Machine Learning and Deep Learning, with a specialized focus on **Generative AI and Computer Vision**.
 
 My work focuses on **generative modeling, visual intelligence, and multimodal learning**. Moving forward, I aim to extend this work through **interdisciplinary research integrating Generative AI with security-oriented domains**, with applications in facial attribute synthesis, missing-person reconstruction, and deepfake detection for **human welfare and public safety**.

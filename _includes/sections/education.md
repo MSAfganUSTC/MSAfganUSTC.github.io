@@ -1,4 +1,7 @@
-# Education
+<div class="cv-section-title">
+  <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+  <span>Education</span>
+</div>
 ## Ph.D. Candidate in School of Cyber Science and Technology
 
 **University of Science and Technology of China (USTC)**  

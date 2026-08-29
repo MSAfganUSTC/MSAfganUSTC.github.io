@@ -1,4 +1,7 @@
-# Awards & Achievements
+<div class="cv-section-title">
+  <i class="fas fa-award" aria-hidden="true"></i>
+  <span>Honors &amp; Awards</span>
+</div>
 
 ## Chinese Scholarship Council (CSC) Funding
 

@@ -1,4 +1,7 @@
-# Publications
+<div class="cv-section-title">
+  <i class="fas fa-book-open" aria-hidden="true"></i>
+  <span>Publications</span>
+</div>
 ## First-Author Publications
 
 

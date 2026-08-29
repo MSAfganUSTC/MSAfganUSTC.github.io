@@ -1,4 +1,7 @@
-# Academic Services
+<div class="cv-section-title">
+  <i class="fas fa-user-graduate" aria-hidden="true"></i>
+  <span>Academic Services</span>
+</div>
 
 ## Research and Academic Service
 

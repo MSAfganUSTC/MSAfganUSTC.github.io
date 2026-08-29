@@ -37,14 +37,14 @@ sitemap: false
     }
     .certificate-download,
     .certificate-download:visited {
-      color: #337ab7;
+      color: #4da6ff;
       font-weight: 600;
       text-decoration: none;
       white-space: nowrap;
     }
     .certificate-download:hover,
     .certificate-download:focus {
-      color: #337ab7;
+      color: #4da6ff;
       text-decoration: underline;
     }
     .certificate-image {
