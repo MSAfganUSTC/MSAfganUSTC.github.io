@@ -6,31 +6,83 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+<div class="wordwrap">
+  You can also find my articles on
+  <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">
+    my Google Scholar profile
+  </a>.
+</div>
 {% endif %}
 
-{% include base_path %}
+## Journal Articles
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+### FaceExpr: Personalized Facial Expression Generation via Attention-Focused U-Net Feature Fusion in Diffusion Models
 
+**Muhammad Sher Afgan**, Bin Liu, Mamoona Naveed Asghar, Wajahat Khalid, Kai Zou, and Dianmo Sheng.  
+*Information Fusion*, Vol. 125, 103431, 2026. :contentReference[oaicite:0]{index=0}
 
+[**View Paper**](https://www.sciencedirect.com/science/article/abs/pii/S1566253525005044){:target="_blank" rel="noopener"}  
+[**DOI: 10.1016/j.inffus.2025.103431**](https://doi.org/10.1016/j.inffus.2025.103431){:target="_blank" rel="noopener"}
 
+---
+
+### DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion
+
+**Muhammad Sher Afgan**, et al.  
+*IEEE Transactions on Circuits and Systems for Video Technology*, 2026.
+
+[**DOI: 10.1109/TCSVT.2026.3729343**](https://doi.org/10.1109/TCSVT.2026.3729343){:target="_blank" rel="noopener"}
+
+---
+
+### Joint Crypto-Stego Scheme for Enhanced Image Protection With Nearest-Centroid Clustering
+
+Amna Shifa, **Muhammad Sher Afgan**, Mamoona Naveed Asghar, Martin Fleury, Imran Memon, Saima Abdullah, and Nadia Rasheed.  
+*IEEE Access*, 2018. :contentReference[oaicite:1]{index=1}
+
+[**View Paper**](https://ieeexplore.ieee.org/document/8314684){:target="_blank" rel="noopener"}  
+[**DOI: 10.1109/ACCESS.2018.2815037**](https://doi.org/10.1109/ACCESS.2018.2815037){:target="_blank" rel="noopener"}
+
+---
+
+## Conference Papers
+
+### SecureFace: A Controlled Deepfake Generation Framework for Exposing Detector Vulnerabilities
+
+**Muhammad Sher Afgan**, Bin Liu, Amna Shifa, and Mamoona Naveed Asghar.  
+*2025 Cyber Research Conference – Ireland (Cyber-RCI)*, 2025. :contentReference[oaicite:2]{index=2}
+
+[**View Paper**](https://ieeexplore.ieee.org/document/11385159){:target="_blank" rel="noopener"}  
+[**DOI: 10.1109/Cyber-RCI68134.2025.11385159**](https://doi.org/10.1109/Cyber-RCI68134.2025.11385159){:target="_blank" rel="noopener"}
+
+---
+
+### Bridging the Sky and Ground: Towards View-Invariant Feature Learning for Aerial-Ground Person Re-Identification
+
+Wajahat Khalid, Bin Liu, Xulin Li, Muhammad Waqas, and **Muhammad Sher Afgan**.  
+*Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)*, 2025, pp. 9749–9758. :contentReference[oaicite:3]{index=3}
+
+[**View Paper**](https://ieeexplore.ieee.org/document/11445477){:target="_blank" rel="noopener"}  
+[**DOI: 10.1109/ICCV51701.2025.00909**](https://doi.org/10.1109/ICCV51701.2025.00909){:target="_blank" rel="noopener"}
+
+---
+
+### Ontology-Based Intelligent Security Framework for Smart Video Surveillance
+
+Amna Shifa, Mamoona Naveed Asghar, Martin Fleury, and **Muhammad Sher Afgan**.  
+*Proceedings of the Future Technologies Conference (FTC) 2018*, Advances in Intelligent Systems and Computing, Vol. 881, Springer, 2019, pp. 118–126. :contentReference[oaicite:4]{index=4}
+
+[**View Paper**](https://link.springer.com/chapter/10.1007/978-3-030-02683-7_10){:target="_blank" rel="noopener"}  
+[**DOI: 10.1007/978-3-030-02683-7_10**](https://doi.org/10.1007/978-3-030-02683-7_10){:target="_blank" rel="noopener"}
+
+---
+
+## Preprints / Working Papers
+
+### ViDiExPo: Video-Supervised Disentanglement with Interaction-Aware Fusion for Controllable Expression and Pose in Diffusion Models
+
+**Muhammad Sher Afgan**, Bin Liu, Kai Zou, Wajahat Khalid, Dianmo Sheng, and Mamoona Naveed Asghar.  
+*SSRN*, 2026. :contentReference[oaicite:5]{index=5}
+
+[**View Paper**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6985056){:target="_blank" rel="noopener"}  
+[**DOI: 10.2139/ssrn.6985056**](https://doi.org/10.2139/ssrn.6985056){:target="_blank" rel="noopener"}
