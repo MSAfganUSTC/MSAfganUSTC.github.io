@@ -153,10 +153,10 @@ author_profile: true
 
 ---
 
-
+## Co-Author Publications
 <div style="margin-bottom: 0.45em;">
   <h3 style="display:inline; color:#0969da;">
-    Two-World
+    Towards Cross-View Learning for Aerial-Ground Person Re-Identification
   </h3>
 
   <details style="display:inline-block; margin-left:8px;">
@@ -169,12 +169,8 @@ author_profile: true
   </details>
 </div>
 
-**Muhammad Sher Afgan**, et al.  
+Wajahat Khalid, Bin Liu, Xulin Li, Muhammad Waqas, **Muhammad Sher Afgan**.
 **Accepted — Not Yet Online**
-
-
-
-## Papers and Publications as a Co-Author
 
 
 <div style="margin-bottom: 0.45em;">
