@@ -2,15 +2,14 @@
   "use strict";
 
   /*
-   * Dynamic, multilingual CV generator.
+   * Dynamic multilingual CV PDF generator.
    *
-   * The PDF is rendered from the CURRENT visible/translatable DOM. This means
-   * the downloaded CV follows the language selected by the visitor. Rendering
-   * through the browser (html2canvas/html2pdf) also preserves CJK, Arabic,
-   * Urdu, and other scripts without jsPDF font-encoding corruption.
+   * IMPORTANT:
+   * References are NOT given a forced page break.
+   * We only prevent individual reference cards from splitting.
    *
-   * Website publication thumbnails are deliberately excluded from the PDF.
-   * The profile photo and reference photos are retained.
+   * This avoids the blank page that appeared between
+   * Academic Services and References.
    */
 
   const HTML2PDF_URL =
@@ -36,6 +35,7 @@
 
   function setStatus(message) {
     const status = document.getElementById("cv-download-status");
+
     if (status) {
       status.textContent = message || "";
     }
@@ -121,12 +121,7 @@
       return "";
     }
 
-    /*
-     * Keep translated or non-Latin names intact.
-     */
-    if (
-      !/^[A-Za-zÀ-ÖØ-öø-ÿĀ-ž'’\-.\s]+$/.test(value)
-    ) {
+    if (!/^[A-Za-zÀ-ÖØ-öø-ÿĀ-ž'’\-.\s]+$/.test(value)) {
       return value;
     }
 
@@ -143,9 +138,7 @@
 
     const initials = parts
       .map(function (part) {
-        const match = part.match(
-          /[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]/
-        );
+        const match = part.match(/[A-Za-zÀ-ÖØ-öø-ÿĀ-ž]/);
 
         return match
           ? match[0].toUpperCase() + "."
@@ -187,23 +180,16 @@
 
   function absoluteImageSources(root) {
     root.querySelectorAll("img").forEach(function (image) {
-      const source =
-        image.getAttribute("src") || image.src;
+      const source = image.getAttribute("src") || image.src;
 
       if (!source) {
         return;
       }
 
       try {
-        image.src = new URL(
-          source,
-          window.location.href
-        ).href;
+        image.src = new URL(source, window.location.href).href;
       } catch (error) {
-        /*
-         * Leave the source unchanged if the browser
-         * cannot normalize it.
-         */
+        // Keep original source if URL normalization fails.
       }
 
       image.loading = "eager";
@@ -215,10 +201,7 @@
   }
 
   function waitForImage(image) {
-    if (
-      image.complete &&
-      image.naturalWidth > 0
-    ) {
+    if (image.complete && image.naturalWidth > 0) {
       return Promise.resolve();
     }
 
@@ -227,17 +210,8 @@
         resolve();
       };
 
-      image.addEventListener(
-        "load",
-        done,
-        { once: true }
-      );
-
-      image.addEventListener(
-        "error",
-        done,
-        { once: true }
-      );
+      image.addEventListener("load", done, { once: true });
+      image.addEventListener("error", done, { once: true });
 
       window.setTimeout(done, 5000);
     });
@@ -246,24 +220,15 @@
   async function waitForAssets(root) {
     absoluteImageSources(root);
 
-    const images = Array.from(
-      root.querySelectorAll("img")
-    );
+    const images = Array.from(root.querySelectorAll("img"));
 
-    await Promise.all(
-      images.map(waitForImage)
-    );
+    await Promise.all(images.map(waitForImage));
 
-    if (
-      document.fonts &&
-      document.fonts.ready
-    ) {
+    if (document.fonts && document.fonts.ready) {
       try {
         await document.fonts.ready;
       } catch (error) {
-        /*
-         * Ignore font-loading errors.
-         */
+        // Ignore font-loading errors.
       }
     }
 
@@ -276,9 +241,7 @@
 
   function firstAuthorDesktopText(index) {
     const items = Array.from(
-      document.querySelectorAll(
-        ".author__urls li.author__desktop"
-      )
+      document.querySelectorAll(".author__urls li.author__desktop")
     );
 
     return items[index]
@@ -286,20 +249,15 @@
       : "";
   }
 
-  function findAuthorLink(
-    selector,
-    hrefPattern
-  ) {
-    const links = Array.from(
-      document.querySelectorAll(selector)
-    );
+  function findAuthorLink(selector, hrefPattern) {
+    const links = Array.from(document.querySelectorAll(selector));
 
     return (
       links.find(function (link) {
         const href = String(
           link.getAttribute("href") ||
-            link.href ||
-            ""
+          link.href ||
+          ""
         );
 
         return hrefPattern.test(href);
@@ -308,26 +266,16 @@
   }
 
   function createTranslatedHeader() {
-    const header =
-      document.createElement("header");
+    const header = document.createElement("header");
 
-    header.className =
-      "pdf-export-header";
+    header.className = "pdf-export-header";
 
-    const visiblePhoto =
-      document.querySelector(
-        ".author__avatar img"
-      );
+    const visiblePhoto = document.querySelector(".author__avatar img");
+    const visibleBio = document.querySelector(".author__bio");
 
-    const visibleBio =
-      document.querySelector(
-        ".author__bio"
-      );
-
-    const emailLink =
-      document.querySelector(
-        '.author__urls a[href^="mailto:"]'
-      );
+    const emailLink = document.querySelector(
+      '.author__urls a[href^="mailto:"]'
+    );
 
     const githubLink = findAuthorLink(
       ".author__urls a[href]",
@@ -340,28 +288,17 @@
     );
 
     const photoSrc = visiblePhoto
-      ? visiblePhoto.currentSrc ||
-        visiblePhoto.src
+      ? visiblePhoto.currentSrc || visiblePhoto.src
       : "/images/profile.png";
 
-    /*
-     * Keep the scholar's personal name
-     * canonical across translated versions.
-     */
-    const name =
-      "Muhammad Sher Afgan";
+    const name = "Muhammad Sher Afgan";
 
     const bio = visibleBio
-      ? cleanText(
-          visibleBio.textContent
-        )
+      ? cleanText(visibleBio.textContent)
       : "Computer Vision & Generative AI Researcher | Machine Learning & Deep Learning";
 
     const email = emailLink
-      ? String(
-          emailLink.getAttribute("href") ||
-            ""
-        ).replace(/^mailto:/i, "")
+      ? String(emailLink.getAttribute("href") || "").replace(/^mailto:/i, "")
       : "msafgan@mail.ustc.edu.cn";
 
     const githubUrl = githubLink
@@ -372,13 +309,8 @@
       ? scholarLink.href
       : "https://scholar.google.com.pk/citations?hl=en&user=EYOfbFOZuxcC";
 
-    const phone =
-      "+86 13083402573";
+    const phone = "+86 13083402573";
 
-    /*
-     * author-profile.html renders location
-     * first and employer second.
-     */
     const location =
       firstAuthorDesktopText(0) ||
       "Hefei, China";
@@ -397,55 +329,53 @@
     header.innerHTML =
       '<div class="pdf-export-header__text">' +
 
-        "<h1>" +
-        escapeHtml(name) +
-        "</h1>" +
+      "<h1>" +
+      escapeHtml(name) +
+      "</h1>" +
 
-        (
-          bio
-            ? '<p class="pdf-export-header__bio">' +
-              escapeHtml(bio) +
-              "</p>"
-            : ""
-        ) +
+      (
+        bio
+          ? '<p class="pdf-export-header__bio">' +
+            escapeHtml(bio) +
+            "</p>"
+          : ""
+      ) +
 
-        '<p class="pdf-export-header__contact">' +
+      '<p class="pdf-export-header__contact">' +
 
-          '<a href="mailto:' +
-          escapeHtml(email) +
-          '">' +
-          escapeHtml(email) +
-          "</a>" +
+      '<a href="mailto:' +
+      escapeHtml(email) +
+      '">' +
+      escapeHtml(email) +
+      "</a>" +
 
-          '<span class="pdf-contact-separator">&middot;</span>' +
+      '<span class="pdf-contact-separator">&middot;</span>' +
 
-          '<a href="' +
-          escapeHtml(githubUrl) +
-          '">GitHub</a>' +
+      '<a href="' +
+      escapeHtml(githubUrl) +
+      '">GitHub</a>' +
 
-          '<span class="pdf-contact-separator">&middot;</span>' +
+      '<span class="pdf-contact-separator">&middot;</span>' +
 
-          '<a href="' +
-          escapeHtml(scholarUrl) +
-          '">Google Scholar</a>' +
+      '<a href="' +
+      escapeHtml(scholarUrl) +
+      '">Google Scholar</a>' +
 
-          '<span class="pdf-contact-separator">&middot;</span>' +
+      '<span class="pdf-contact-separator">&middot;</span>' +
 
-          '<a href="tel:+86130883402573">' +
-          escapeHtml(phone) +
-          "</a>" +
+      '<a href="tel:+8613083402573">' +
+      escapeHtml(phone) +
+      "</a>" +
 
-        "</p>" +
+      "</p>" +
 
-        (
-          institutionLine
-            ? '<p class="pdf-export-header__institution">' +
-              escapeHtml(
-                institutionLine
-              ) +
-              "</p>"
-            : ""
-        ) +
+      (
+        institutionLine
+          ? '<p class="pdf-export-header__institution">' +
+            escapeHtml(institutionLine) +
+            "</p>"
+          : ""
+      ) +
 
       "</div>" +
 
@@ -458,25 +388,14 @@
     return header;
   }
 
-  function groupHeadingBlocks(
-    root,
-    sectionSelector
-  ) {
-    const section =
-      root.querySelector(
-        sectionSelector
-      );
+  function groupHeadingBlocks(root, sectionSelector) {
+    const section = root.querySelector(sectionSelector);
 
     if (!section) {
       return;
     }
 
-    /*
-     * Keep each logical CV entry together.
-     */
-    const children = Array.from(
-      section.childNodes
-    );
+    const children = Array.from(section.childNodes);
 
     let block = null;
 
@@ -488,9 +407,7 @@
       const isSectionTitle =
         node.nodeType === 1 &&
         node.classList &&
-        node.classList.contains(
-          "cv-section-title"
-        );
+        node.classList.contains("cv-section-title");
 
       if (isSectionTitle) {
         block = null;
@@ -498,19 +415,10 @@
       }
 
       if (isHeading) {
-        block =
-          document.createElement(
-            "div"
-          );
+        block = document.createElement("div");
+        block.className = "pdf-keep-block";
 
-        block.className =
-          "pdf-keep-block";
-
-        section.insertBefore(
-          block,
-          node
-        );
-
+        section.insertBefore(block, node);
         block.appendChild(node);
 
         return;
@@ -529,44 +437,32 @@
     });
   }
 
-  function transformPublicationsForPdf(
+  function transformPublicationsForPdf(root) {
     root
-  ) {
-    root
-      .querySelectorAll(
-        ".publication-card"
-      )
+      .querySelectorAll(".publication-card")
       .forEach(function (card) {
-        const titleNode =
-          card.querySelector(
-            ".publication-card__title"
-          );
+        const titleNode = card.querySelector(
+          ".publication-card__title"
+        );
 
-        const authorsNode =
-          card.querySelector(
-            ".publication-card__authors"
-          );
+        const authorsNode = card.querySelector(
+          ".publication-card__authors"
+        );
 
-        const venueNode =
-          card.querySelector(
-            ".publication-card__venue"
-          );
+        const venueNode = card.querySelector(
+          ".publication-card__venue"
+        );
 
-        const metricNode =
-          card.querySelector(
-            ".publication-card__metric"
-          );
+        const metricNode = card.querySelector(
+          ".publication-card__metric"
+        );
 
         const title = titleNode
-          ? cleanText(
-              titleNode.textContent
-            )
+          ? cleanText(titleNode.textContent)
           : "";
 
         const authors = authorsNode
-          ? cleanText(
-              authorsNode.textContent
-            )
+          ? cleanText(authorsNode.textContent)
           : "";
 
         const venueHtml = venueNode
@@ -574,68 +470,58 @@
           : "";
 
         const metric = metricNode
-          ? cleanText(
-              metricNode.textContent
-            )
+          ? cleanText(metricNode.textContent)
           : "";
 
-        const entry =
-          document.createElement(
-            "div"
-          );
+        const entry = document.createElement("div");
 
-        entry.className =
-          "pdf-publication-entry";
+        entry.className = "pdf-publication-entry";
 
         entry.innerHTML =
           '<div class="pdf-publication-entry__bullet">&bull;</div>' +
 
           '<div class="pdf-publication-entry__content">' +
 
-            '<div class="pdf-publication-entry__citation">' +
+          '<div class="pdf-publication-entry__citation">' +
 
-              (
-                authors
-                  ? '<span class="pdf-publication-entry__authors">' +
-                    authorListHtml(
-                      authors
-                    ) +
-                    "</span>, "
-                  : ""
-              ) +
+          (
+            authors
+              ? '<span class="pdf-publication-entry__authors">' +
+                authorListHtml(authors) +
+                "</span>, "
+              : ""
+          ) +
 
-              (
-                title
-                  ? '&ldquo;<span class="pdf-publication-entry__title">' +
-                    escapeHtml(
-                      title
-                    ) +
-                    "</span>,&rdquo; "
-                  : ""
-              ) +
+          (
+            title
+              ? '&ldquo;<span class="pdf-publication-entry__title">' +
+                escapeHtml(title) +
+                "</span>,&rdquo; "
+              : ""
+          ) +
 
-              (
-                venueHtml
-                  ? '<span class="pdf-publication-entry__venue">' +
-                    venueHtml +
-                    "</span>"
-                  : ""
-              ) +
+          (
+            venueHtml
+              ? '<span class="pdf-publication-entry__venue">' +
+                venueHtml +
+                "</span>"
+              : ""
+          ) +
 
-            "</div>" +
+          "</div>" +
 
-            (
-              metric
-                ? '<div class="pdf-publication-entry__metric">' +
-                  escapeHtml(
-                    metric.replace(
-                      /Impact Factor:/i,
-                      "IF:"
-                    )
-                  ) +
-                  "</div>"
-                : ""
-            ) +
+          (
+            metric
+              ? '<div class="pdf-publication-entry__metric">' +
+                escapeHtml(
+                  metric.replace(
+                    /Impact Factor:/i,
+                    "IF:"
+                  )
+                ) +
+                "</div>"
+              : ""
+          ) +
 
           "</div>";
 
@@ -644,118 +530,54 @@
   }
 
   /*
-   * IMPORTANT FIX:
+   * REFERENCES FIX
    *
-   * html2pdf's CSS page-break handling can be unreliable
-   * with grid/flex layouts. Therefore we inject the legacy
-   * html2pdf page-break element directly before References.
+   * Do NOT insert html2pdf__page-break.
+   * Do NOT force #references to begin on a new page.
    *
-   * This forces References to start on a new PDF page.
-   */
-  function insertReferencesPageBreak(root) {
-    const references =
-      root.querySelector("#references");
-
-    if (!references) {
-      console.warn(
-        "References section not found in cloned CV DOM."
-      );
-      return;
-    }
-
-    /*
-     * Prevent duplicate markers if this function is ever
-     * executed more than once.
-     */
-    const previous =
-      references.previousElementSibling;
-
-    if (
-      previous &&
-      previous.classList.contains(
-        "html2pdf__page-break"
-      )
-    ) {
-      return;
-    }
-
-    const pageBreak =
-      document.createElement("div");
-
-    pageBreak.className =
-      "html2pdf__page-break";
-
-    /*
-     * Explicit dimensions help html2pdf recognize
-     * the break while keeping it invisible.
-     */
-    pageBreak.style.display =
-      "block";
-
-    pageBreak.style.height =
-      "0";
-
-    pageBreak.style.margin =
-      "0";
-
-    pageBreak.style.padding =
-      "0";
-
-    pageBreak.style.border =
-      "0";
-
-    pageBreak.setAttribute(
-      "aria-hidden",
-      "true"
-    );
-
-    references.parentNode.insertBefore(
-      pageBreak,
-      references
-    );
-  }
-
-  /*
-   * Extra protection for reference cards.
+   * The previous forced break combined with CSS pagination
+   * produced the completely blank fifth page visible in the
+   * supplied PDF.
    *
-   * The explicit inline values are applied to the cloned PDF DOM,
-   * so they do not affect the normal website.
+   * We only protect each reference card from being split.
    */
   function protectReferenceCards(root) {
     root
-      .querySelectorAll(
-        ".reference-card"
-      )
+      .querySelectorAll(".reference-card")
       .forEach(function (card) {
-        card.style.breakInside =
-          "avoid";
-
-        card.style.pageBreakInside =
-          "avoid";
-
-        card.style.webkitColumnBreakInside =
-          "avoid";
+        card.style.breakInside = "avoid";
+        card.style.pageBreakInside = "avoid";
+        card.style.webkitColumnBreakInside = "avoid";
       });
 
-    const referenceGrid =
-      root.querySelector(
-        "#references .reference-grid"
-      );
+    const referenceGrid = root.querySelector(
+      "#references .reference-grid"
+    );
 
     if (referenceGrid) {
-      referenceGrid.style.breakInside =
-        "auto";
+      /*
+       * Allow the grid itself to flow naturally.
+       *
+       * Making the entire grid/section "avoid" can force
+       * html2pdf to reserve a complete page and is one of
+       * the causes of unwanted blank pages.
+       */
+      referenceGrid.style.breakInside = "auto";
+      referenceGrid.style.pageBreakInside = "auto";
+    }
 
-      referenceGrid.style.pageBreakInside =
-        "auto";
+    const references = root.querySelector("#references");
+
+    if (references) {
+      references.style.breakBefore = "auto";
+      references.style.pageBreakBefore = "auto";
+      references.style.breakInside = "auto";
+      references.style.pageBreakInside = "auto";
     }
   }
 
   function preparePdfDom() {
-    const source =
-      document.getElementById(
-        "cv-content"
-      );
+    const source = document.getElementById("cv-content");
 
     if (!source) {
       throw new Error(
@@ -763,8 +585,7 @@
       );
     }
 
-    const clone =
-      source.cloneNode(true);
+    const clone = source.cloneNode(true);
 
     clone.removeAttribute("id");
 
@@ -773,16 +594,8 @@
       "notranslate"
     );
 
-    clone.setAttribute(
-      "translate",
-      "no"
-    );
+    clone.setAttribute("translate", "no");
 
-    /*
-     * The hidden Jekyll PDF header may still be English
-     * after Google Translate. Replace it with a fresh
-     * header built from the visible UI.
-     */
     clone
       .querySelectorAll(".pdf-only")
       .forEach(function (node) {
@@ -798,20 +611,13 @@
       });
 
     clone
-      .querySelectorAll(
-        ".cv-section-title i"
-      )
+      .querySelectorAll(".cv-section-title i")
       .forEach(function (node) {
         node.remove();
       });
 
-    transformPublicationsForPdf(
-      clone
-    );
+    transformPublicationsForPdf(clone);
 
-    /*
-     * Keep Education and Experience entries together.
-     */
     groupHeadingBlocks(
       clone,
       "#education"
@@ -823,35 +629,21 @@
     );
 
     /*
-     * ===== REFERENCES FIX =====
-     *
-     * 1. Prevent individual cards from splitting.
-     * 2. Force the whole References section to begin
-     *    on a fresh PDF page.
+     * Protect cards, but allow the References section
+     * itself to paginate normally.
      */
-    protectReferenceCards(
-      clone
-    );
+    protectReferenceCards(clone);
 
-    insertReferencesPageBreak(
-      clone
-    );
-
-    const header =
-      createTranslatedHeader();
+    const header = createTranslatedHeader();
 
     clone.insertBefore(
       header,
       clone.firstChild
     );
 
-    const lang =
-      currentLanguageCode();
+    const lang = currentLanguageCode();
 
-    clone.setAttribute(
-      "lang",
-      lang
-    );
+    clone.setAttribute("lang", lang);
 
     clone.setAttribute(
       "dir",
@@ -860,10 +652,7 @@
         : "ltr"
     );
 
-    const host =
-      document.createElement(
-        "div"
-      );
+    const host = document.createElement("div");
 
     host.className =
       "cv-pdf-export-host notranslate";
@@ -873,13 +662,9 @@
       "no"
     );
 
-    host.appendChild(
-      clone
-    );
+    host.appendChild(clone);
 
-    document.body.appendChild(
-      host
-    );
+    document.body.appendChild(host);
 
     return {
       host: host,
@@ -892,43 +677,25 @@
       return;
     }
 
-    if (
-      !document.getElementById(
-        "cv-content"
-      )
-    ) {
-      window.location.href =
-        "/#download-cv";
-
+    if (!document.getElementById("cv-content")) {
+      window.location.href = "/#download-cv";
       return;
     }
 
     generating = true;
 
-    setStatus(
-      "Generating CV PDF…"
-    );
+    setStatus("Generating CV PDF…");
 
     let prepared = null;
 
     try {
-      const html2pdf =
-        await loadHtml2Pdf();
+      const html2pdf = await loadHtml2Pdf();
 
-      prepared =
-        preparePdfDom();
+      prepared = preparePdfDom();
 
-      await waitForAssets(
-        prepared.root
-      );
+      await waitForAssets(prepared.root);
 
       const options = {
-        /*
-         * Real page margins prevent content from touching
-         * or being clipped at the A4 edges.
-         *
-         * [top, left, bottom, right] in millimetres.
-         */
         margin: [
           14,
           14,
@@ -936,8 +703,7 @@
           14
         ],
 
-        filename:
-          PDF_FILENAME,
+        filename: PDF_FILENAME,
 
         image: {
           type: "jpeg",
@@ -948,32 +714,33 @@
           scale: 2,
           useCORS: true,
           allowTaint: false,
-          backgroundColor:
-            "#ffffff",
+          backgroundColor: "#ffffff",
           logging: false,
           scrollX: 0,
           scrollY: 0,
 
-          windowWidth:
-            Math.max(
-              1200,
-              document
-                .documentElement
-                .clientWidth
-            )
+          windowWidth: Math.max(
+            1200,
+            document.documentElement.clientWidth
+          )
         },
 
         jsPDF: {
           unit: "mm",
           format: "a4",
-          orientation:
-            "portrait",
+          orientation: "portrait",
           compress: true
         },
 
         /*
-         * "legacy" is important because the explicit
-         * html2pdf__page-break marker uses this mode.
+         * CRITICAL:
+         *
+         * #references is deliberately NOT in the avoid list.
+         * If the entire References section is marked "avoid",
+         * html2pdf can push it beyond the next page and create
+         * an empty page.
+         *
+         * Only individual .reference-card elements are protected.
          */
         pagebreak: {
           mode: [
@@ -1026,20 +793,15 @@
   document.addEventListener(
     "click",
     function (event) {
-      const link =
-        event.target.closest(
-          'a[href$="#download-cv"]'
-        );
+      const link = event.target.closest(
+        'a[href$="#download-cv"]'
+      );
 
       if (!link) {
         return;
       }
 
-      if (
-        !document.getElementById(
-          "cv-content"
-        )
-      ) {
+      if (!document.getElementById("cv-content")) {
         return;
       }
 
@@ -1050,11 +812,8 @@
   );
 
   if (
-    window.location.hash ===
-      "#download-cv" &&
-    document.getElementById(
-      "cv-content"
-    )
+    window.location.hash === "#download-cv" &&
+    document.getElementById("cv-content")
   ) {
     window.setTimeout(
       function () {
@@ -1062,8 +821,7 @@
 
         if (
           window.history &&
-          window.history
-            .replaceState
+          window.history.replaceState
         ) {
           window.history.replaceState(
             null,
