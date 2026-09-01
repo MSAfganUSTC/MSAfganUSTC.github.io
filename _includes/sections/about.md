@@ -8,24 +8,18 @@ My research focuses on **Generative AI, visual intelligence, and multimodal lear
 
 Building on this foundation, I aim to extend Generative AI toward **interdisciplinary applications** across **healthcare, trustworthy AI, and cyberspace security**, with a broader focus on **human welfare and public safety**.
 
-
 ## Technical Expertise
 
-**Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate
+**Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate · Distributed / Multi-GPU Training
 
-**Generative AI & Visual Intelligence:** Diffusion Models · Stable Diffusion / SDXL · Personalized & Controllable Text-to-Image Generation · Identity-Preserving Facial Synthesis · Multi-Attribute Generation · U-Net / ControlNet Adaptation
+**Generative AI & Visual Intelligence:** Diffusion Models · Stable Diffusion / SDXL · Controllable Text-to-Image Generation · Identity-Preserving & Multi-Attribute Synthesis · U-Net / ControlNet Adaptation
 
-**Multimodal & Representation Learning:** Text–Image Conditioning · Multimodal Embedding Fusion · Identity–Semantic Disentanglement · Attention & Cross-Attention · Self-/Video-Supervised Learning · Metric Learning
+**Multimodal & Representation Learning:** Text–Image Conditioning · Multimodal Embedding Fusion · Identity–Semantic Disentanglement · Attention & Feature Fusion · Self-/Video-Supervised Learning
 
-**Model Development & Adaptation:** Feature & Residual Fusion · Pretrained Backbone Adaptation · Conditional Generation · Model Fine-Tuning · Distributed / Multi-GPU Training · Model Evaluation
-
-**Trustworthy AI & Security:** Deepfake Generation & Detection · Detector Robustness & Vulnerability Evaluation · Digital Forensics · Security-Aware Generative AI
+**Trustworthy AI & Security:** Deepfake Generation & Detection · Robustness & Vulnerability Evaluation · Digital Forensics
 
 ## Current Status & Focus
 
-Currently pursuing my Ph.D. with a primary research focus on **Generative AI for visual and multimodal intelligence**, while progressively exploring its integration with **security-oriented and human-centered applications**.
-
-
-I have successfully completed the blind review of my Ph.D. dissertation, receiving approval from **all five external reviewers**, and have fulfilled the coursework, degree, and publication requirements for the Ph.D., with a finalized CGPA of **3.71/4.00**. I am currently awaiting the formal announcement of my dissertation defense, expected in **September 2026**, after which I will proceed with the degree application. In parallel, I am preparing for the defense and continuing research on **generative and multimodal intelligence, identity-preserving synthesis, visual understanding, and security-oriented AI**, including the ongoing revision of **ViDiExPo**.
+My Ph.D. dissertation has successfully completed **blind review with approval from all five external reviewers**, and I have fulfilled all **coursework, degree, and publication requirements**, with a finalized CGPA of **3.71/4.00**. I am currently preparing for my **dissertation defense, expected in September 2026**, while continuing research in **Generative AI, multimodal intelligence, and security-oriented AI**.
 
 <p class="no-pdf">For a complete academic record, <a href="/#download-cv" class="cv-download-link"><strong>download my CV</strong></a>.</p>
