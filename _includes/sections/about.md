@@ -2,30 +2,29 @@
   <i class="fas fa-user" aria-hidden="true"></i>
   <span>About</span>
 </div>
+I am a Ph.D. candidate in Cyberspace Security at <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>.
 
-I am a Ph.D. candidate in Cyberspace Security at <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>. My research is in Machine Learning and Deep Learning, with a specialized focus on **Generative AI and Computer Vision**.
+My research focuses on **Generative AI, visual intelligence, and multimodal learning**, particularly **diffusion models, controllable generation, text-to-image synthesis, and identity-aware visual generation**. I have applied these capabilities to **human-centered and security-oriented problems**, including **missing-person reconstruction and deepfake detection**.
 
-My work focuses on **generative modeling, visual intelligence, and multimodal learning**. Moving forward, I aim to extend this work through **interdisciplinary research integrating Generative AI with security-oriented domains**, with applications in facial attribute synthesis, missing-person reconstruction, and deepfake detection for **human welfare and public safety**.
+Building on this foundation, I aim to extend Generative AI toward **interdisciplinary applications** across **healthcare, trustworthy AI, and cyberspace security**, with a broader focus on **human welfare and public safety**.
 
-## Research Interests
-
-- **Machine Learning & Deep Learning**  
-  Computer Vision · Generative AI · Self-Supervised Learning · Transformer Architectures
-
-- **Generative & Multimodal Intelligence**  
-  Diffusion Models · Controllable Image Synthesis · Identity-Preserving Generation · Text-to-Image Generation · Vision-Language Models · Multimodal Learning
-
-- **Trustworthy AI**  
-  Deepfake Detection · Responsible AI
 
 ## Technical Expertise
 
 **Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate
 
-**Generative AI & Computer Vision:** Diffusion Models · Stable Diffusion / SDXL · Controllable Image Synthesis · Identity-Preserving Generation · U-Net Architectures · Cross-Attention · CLIP · ArcFace . Controlled Backbone Adoption
+**Generative AI & Visual Intelligence:** Diffusion Models · Stable Diffusion / SDXL · Personalized & Controllable Text-to-Image Generation · Identity-Preserving Facial Synthesis · Multi-Attribute Generation · U-Net / ControlNet Adaptation
 
-**Multimodal Learning & Model Development:** Text–Image Conditioning · Multimodal Representation Learning · Model Fine-Tuning · Distributed / Multi-GPU Training · Model Evaluation
+**Multimodal & Representation Learning:** Text–Image Conditioning · Multimodal Embedding Fusion · Identity–Semantic Disentanglement · Attention & Cross-Attention · Self-/Video-Supervised Learning · Metric Learning
+
+**Model Development & Adaptation:** Feature & Residual Fusion · Pretrained Backbone Adaptation · Conditional Generation · Model Fine-Tuning · Distributed / Multi-GPU Training · Model Evaluation
+
+**Trustworthy AI & Security:** Deepfake Generation & Detection · Detector Robustness & Vulnerability Evaluation · Digital Forensics · Security-Aware Generative AI
+
 ## Current Status & Focus
+
+Currently pursuing my Ph.D. with a primary research focus on **Generative AI for visual and multimodal intelligence**, while progressively exploring its integration with **security-oriented and human-centered applications**.
+
 
 I have successfully completed the blind review of my Ph.D. dissertation, receiving approval from **all five external reviewers**, and have fulfilled the coursework, degree, and publication requirements for the Ph.D., with a finalized CGPA of **3.71/4.00**. I am currently awaiting the formal announcement of my dissertation defense, expected in **September 2026**, after which I will proceed with the degree application. In parallel, I am preparing for the defense and continuing research on **generative and multimodal intelligence, identity-preserving synthesis, visual understanding, and security-oriented AI**, including the ongoing revision of **ViDiExPo**.
 
