@@ -688,6 +688,13 @@ a:focus,
 }
 
 /* Reference photos remain visible in the generated CV. */
+/* Start the complete References section on a fresh PDF page.
+   This prevents the first reference card from being sliced between pages. */
+.cv-pdf-export-root #references {
+  break-before: page !important;
+  page-break-before: always !important;
+}
+
 .cv-pdf-export-root .reference-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
