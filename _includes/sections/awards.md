@@ -10,9 +10,7 @@ Fully funded Ph.D. research support at the **University of Science and Technolog
 ## Academic Excellence
 
 - **1st Position among 1120 students**, B.S. Computer Science, The Islamia University of Bahawalpur.
-
-## Research Recognition
-
+  
 ## Research Funding
 
 **National ICT R&D Fund, Pakistan**  
