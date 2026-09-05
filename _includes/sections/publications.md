@@ -43,7 +43,7 @@
       <a href="https://doi.org/10.1109/TCSVT.2026.3729343" target="_blank" rel="noopener">DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion</a>
     </h3>
     <p class="publication-card__authors"><strong>Muhammad Sher Afgan</strong>, Bin Liu, Wajahat Khalid, Kai Zou, Tianyi Wei, Mamoona Naveed Asghar.</p>
-    <p class="publication-card__venue"><strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>, 2026, <strong>(Accepted)</strong>.</p>
+    <p class="publication-card__venue"><strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>, pp. 1–1, 2026.</p>
     <p class="publication-card__metric"><strong>Q1 · Impact Factor: 10.8</strong></p>
     <div class="publication-card__actions no-pdf">
       <a class="publication-action" href="https://github.com/MSAfganUSTC/DiffAgeX" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
@@ -53,9 +53,9 @@
   title={DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion},
   author={Afgan, Muhammad Sher and Liu, Bin and Khalid, Wajahat and Zou, Kai and Wei, Tianyi and Asghar, Mamoona Naveed},
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  pages={1--1},
   year={2026},
-  doi={10.1109/TCSVT.2026.3729343},
-  note={Accepted}
+  doi={10.1109/TCSVT.2026.3729343}
 }</pre>
       </details>
     </div>
