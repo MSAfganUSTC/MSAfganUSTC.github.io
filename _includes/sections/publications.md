@@ -55,7 +55,8 @@
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
   pages={1--1},
   year={2026},
-  doi={10.1109/TCSVT.2026.3729343}
+  doi={10.1109/TCSVT.2026.3729343},
+  url={https://ieeexplore.ieee.org/document/11674263}
 }</pre>
       </details>
     </div>
