@@ -9,8 +9,7 @@ Hefei, China
 **Present**
 
 - Current CGPA: **3.71/4.00**
-- Engaged in advanced research in computer science.
-- Research focus: Computer Vision, Generative AI, diffusion models, and multimodal understanding.
+- Research focus: Generative AI, diffusion models, multimodal learning, and trustworthy AI.
 - Expected Ph.D. graduation: **October 2026**
 
 ## M.S. in Computer Science
