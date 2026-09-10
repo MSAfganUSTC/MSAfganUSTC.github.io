@@ -6,7 +6,7 @@ I am a Ph.D. candidate in Cyberspace Security at <a href="https://en.ustc.edu.cn
 
 My research focuses on **Generative AI, visual intelligence, and multimodal learning**, particularly diffusion models, text-to-image synthesis, and identity-aware visual generation. I have applied these capabilities to **human-centered** and **security-oriented problems**.
 
-Building on this foundation, I aim to extend Generative AI toward **interdisciplinary applications** across **healthcare, medical, trustworthy AI, and security**, with a broader focus on **human welfare and public safety**.
+Building on this foundation, I aim to extend Generative AI and multimodal intelligence toward **interdisciplinary and agentic AI**, **including AI for Science**, **biomedical applications**, and **trustworthy intelligent systems**, with a broader focus on **human welfare and public safety**.
 
 ## Technical Expertise
 
