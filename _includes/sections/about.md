@@ -14,11 +14,10 @@ Building on this foundation, I aim to extend Generative AI and multimodal intell
 
 **Generative AI & Visual Intelligence:** Diffusion Models · Stable Diffusion / SDXL · Controllable Text-to-Image Generation · Identity-Preserving & Multi-Attribute Synthesis · U-Net / ControlNet Adaptation
 
-**Multimodal & Representation Learning:** Text–Image Conditioning · Multimodal Embedding Fusion · Identity–Semantic Disentanglement · Attention & Feature Fusion · Self-/Video-Supervised Learning
+**Multimodal & Representation Learning:** Text–Image Conditioning · Vision-Language Models (LLaVA) · Multimodal Embedding Fusion · Identity–Semantic Disentanglement · Attention & Feature Fusion · Self-/Video-Supervised Learning
 
 **Trustworthy AI & Security:** Deepfake Generation & Detection · Robustness & Vulnerability Evaluation · Digital Forensics
 
 ## Current Status
-
-My Ph.D. **dissertation** has successfully completed evaluation and received **approval from all external experts**. I have fulfilled **all academic and publication requirements**, with a finalized **CGPA of 3.71/4.00**. I am currently at the **defense stage**, expected in **September 2026**, while continuing my research.
+My Ph.D. dissertation has been **evaluated and approved by all external experts**. I have fulfilled **all academic and publication requirements** (CGPA: **3.71/4.00**) and am currently at the **dissertation defense stage (September 2026)**.
 <p class="no-pdf">For a complete academic record, <a href="/#download-cv" class="cv-download-link"><strong>download my CV</strong></a>.</p>
