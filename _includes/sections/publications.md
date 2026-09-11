@@ -43,7 +43,7 @@
       <a href="https://doi.org/10.1109/TCSVT.2026.3729343" target="_blank" rel="noopener">DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion</a>
     </h3>
     <p class="publication-card__authors"><strong>Muhammad Sher Afgan</strong>, Bin Liu, Wajahat Khalid, Kai Zou, Tianyi Wei, Mamoona Naveed Asghar.</p>
-    <p class="publication-card__venue"><strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>, pp. 1–1, 2026.</p>
+    <p class="publication-card__venue"><strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>, <strong>Early Access, 2026</strong>.</p>
     <p class="publication-card__metric"><strong>Q1 · Impact Factor: 10.8</strong></p>
     <div class="publication-card__actions no-pdf">
       <a class="publication-action" href="https://github.com/MSAfganUSTC/DiffAgeX" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
@@ -53,8 +53,8 @@
   title={DiffAgeX: Identity Consistent Multi-Attribute Facial Synthesis via Adaptive Residual Fusion},
   author={Afgan, Muhammad Sher and Liu, Bin and Khalid, Wajahat and Zou, Kai and Wei, Tianyi and Asghar, Mamoona Naveed},
   journal={IEEE Transactions on Circuits and Systems for Video Technology},
-  pages={1--1},
   year={2026},
+  note={Early Access},
   doi={10.1109/TCSVT.2026.3729343},
   url={https://ieeexplore.ieee.org/document/11674263}
 }</pre>
@@ -81,7 +81,7 @@
   author={Afgan, Muhammad Sher and Liu, Bin and Shifa, Amna and Asghar, Mamoona Naveed},
   booktitle={2025 Cyber Research Conference -- Ireland (Cyber-RCI)},
   year={2025},
-  doi={10.1109/Cyber-RCI68134.2025.11385159}
+  doi={10.1109/CYBER-RCI68134.2025.11385159}
 }</pre>
       </details>
     </div>
@@ -97,8 +97,7 @@
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6985056" target="_blank" rel="noopener">ViDiExPo: Video-Supervised Disentanglement with Interaction-Aware Fusion for Controllable Expression and Pose in Diffusion Models</a>
     </h3>
     <p class="publication-card__authors"><strong>Muhammad Sher Afgan</strong>, Bin Liu, Kai Zou, Wajahat Khalid, Dianmo Sheng, Mamoona Naveed Asghar.</p>
-    <p class="publication-card__venue"><strong>Neurocomputing</strong>, 2026, <strong>(Under Review)</strong>.</p>
-    <p class="publication-card__metric"><strong>Q1 · Impact Factor: 6.7</strong></p>
+    <p class="publication-card__venue"><strong>Preprint submitted to Neurocomputing</strong>, 18 June 2026; available on SSRN. <strong>Under Review</strong>.</p>
     <div class="publication-card__actions no-pdf">
       <a class="publication-action" href="https://github.com/MSAfganUSTC/ViDiExPo" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
       <details class="publication-cite">
@@ -108,7 +107,7 @@
   author={Afgan, Muhammad Sher and Liu, Bin and Zou, Kai and Khalid, Wajahat and Sheng, Dianmo and Asghar, Mamoona Naveed},
   year={2026},
   doi={10.2139/ssrn.6985056},
-  note={SSRN Preprint}
+  note={SSRN Preprint; submitted to Neurocomputing, under review}
 }</pre>
       </details>
     </div>
