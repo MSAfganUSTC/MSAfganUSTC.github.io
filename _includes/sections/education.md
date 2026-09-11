@@ -16,7 +16,7 @@ Hefei, China
 
 **The Islamia University of Bahawalpur (IUB)**  
 Bahawalpur, Pakistan  
-**2016 – April 2018**
+**February 2016 – September 2018**
 
 - Research-based Master's program.
 - CGPA: **3.67/4.00**
@@ -27,7 +27,7 @@ Bahawalpur, Pakistan
 
 **The Islamia University of Bahawalpur (IUB)**  
 Bahawalpur, Pakistan  
-**2011 – September 2015**
+**September 2011 – August 2015**
 
 - CGPA: **3.92/4.00**
 - Ranked **1st among 1,120 students** and awarded the **Gold Medal**.
