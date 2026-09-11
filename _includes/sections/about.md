@@ -7,15 +7,15 @@ I am a Ph.D. candidate in Cyberspace Security at <a href="https://en.ustc.edu.cn
 
 My research focuses on **Generative AI, visual intelligence, and multimodal learning**, particularly diffusion models, controllable text-to-image synthesis, identity-aware visual generation, multimodal representation learning, and **trustworthy AI**. I have applied these capabilities to **human-centered and security-oriented problems**, including missing-person reconstruction and deepfake robustness evaluation.
 
-Building on this foundation, I aim to advance **Generative AI and multimodal intelligence** toward trustworthy and interdisciplinary AI, including **AI for Science, biomedical AI, multimodal perception and reasoning, and security-sensitive applications**, with a broader focus on **human welfare and public safety**.
+Building on this foundation, I aim to advance **Generative AI and multimodal intelligence** toward **multimodal foundation models, controllable visual generation, and representation learning**. I am particularly interested in extending my experience in **diffusion models and multimodal conditioning** toward **image and video generation, multimodal understanding, and efficient model adaptation**, with an emphasis on **trustworthy generative intelligence**.
 
 ## Technical Expertise
 
 **Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate · Distributed / Multi-GPU Training
 
-**Generative AI & Visual Intelligence:** Diffusion Models · Stable Diffusion / SDXL · Controllable Text-to-Image Generation · Identity-Preserving & Multi-Attribute Synthesis · U-Net / ControlNet Adaptation
+**Generative AI & Visual Intelligence:** **Diffusion Models** · Stable Diffusion / SDXL · **Controllable Text-to-Image Generation** · **Identity-Preserving & Multi-Attribute Synthesis** · U-Net / ControlNet Adaptation · **Pretrained Generative Model Adaptation**
 
-**Multimodal & Representation Learning:** Text–Image Conditioning · Vision-Language Models (LLaVA) · **Multimodal Perception** · Multimodal Embedding Fusion · Identity–Semantic Disentanglement · Attention & Feature Fusion · Self-/Video-Supervised Learning
+**Multimodal & Representation Learning:** **Text–Image Conditioning** · Vision-Language Models (LLaVA) · **Multimodal Perception** · **Cross-Modal Representation Learning** · Multimodal Embedding Fusion · **Identity–Semantic Disentanglement** · Attention & Feature Fusion · Self-/Video-Supervised Learning
 
 **Trustworthy AI & Security:** Deepfake Generation & Detection · Robustness & Vulnerability Evaluation · Digital Forensics
 
