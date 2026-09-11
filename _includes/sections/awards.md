@@ -9,6 +9,7 @@ Fully funded Ph.D. research support at the **University of Science and Technolog
 
 ## Academic Excellence
 
+- **Academic Excellence Star**, University of Science and Technology of China (USTC).
 - **Gold Medalist and 1st Position among 1,120 students**, B.S. Computer Science, The Islamia University of Bahawalpur.
 
 ## Research Funding
