@@ -7,7 +7,7 @@
 **School of Cyber Science and Technology — Ph.D. Candidate**  
 Hefei, China | **September 2019 – Present**
 
-- Conducting research on **controllable diffusion models**, **multimodal generation and representation learning**, **identity-preserving synthesis**, and **trustworthy AI**.
+- Conducting research on **controllable diffusion models**, **multimodal generation and representation learning**, **identity-preserving synthesis**, **pretrained generative model adaptation**, and **trustworthy AI**.
 - Developed research frameworks including **FaceExpr**<sup><a href="https://github.com/MSAfganUSTC/FaceExpr" target="_blank" rel="noopener">[1]</a></sup>, **DiffAgeX**<sup><a href="https://github.com/MSAfganUSTC/DiffAgeX" target="_blank" rel="noopener">[2]</a></sup>, **ViDiExPo**<sup><a href="https://github.com/MSAfganUSTC/ViDiExPo" target="_blank" rel="noopener">[3]</a></sup>, and **SecureFace**<sup><a href="https://ieeexplore.ieee.org/document/11385159" target="_blank" rel="noopener">[4]</a></sup>.
 - Applied Generative AI to **human-centered and security-oriented problems**, including missing-person reconstruction and deepfake robustness evaluation.
 
