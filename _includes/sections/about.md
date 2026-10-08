@@ -3,24 +3,22 @@
   <span>About</span>
 </div>
 
-I am a Ph.D. candidate in Cyberspace Security at <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>.
+PhD researcher at <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>, specializing in generative AI, diffusion models, and multimodal representation learning. My research focuses on controllable and identity-preserving image generation, pretrained-model adaptation, and trustworthy AI, with applications in human-centered visual synthesis and deepfake robustness.
 
-My research focuses on **multimodal generative AI, representation learning, and trustworthy AI**, particularly diffusion models, multimodal conditioning, controllable text-to-image synthesis, identity-aware visual generation, and **pretrained generative model adaptation**. I have applied these capabilities to **human-centered and security-oriented problems**, including missing-person reconstruction and deepfake robustness evaluation.
-
-Building on this foundation, I aim to extend my research toward **multimodal foundation models and vision-language understanding**, with an emphasis on **efficient pretrained-model adaptation and trustworthy multimodal AI**. I am particularly interested in transferring my experience in **cross-modal representation learning, feature fusion, and controllable generation** to multimodal model adaptation, exploring **parameter-efficient fine-tuning**, and developing **robustness and safety evaluation** methods for multimodal systems.
+My recent first-author publications include Information Fusion (2026), IEEE TCSVT (2026), and Cyber-RCI (2025). I am interested in extending my experience in generative modeling and multimodal learning to foundation models and biomedical AI.
 
 ## Technical Expertise
 
-**Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate · **Distributed / Multi-GPU Training**
+**Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate · Multi-GPU Training
 
-**Generative AI & Model Adaptation:** **Diffusion Models** · Stable Diffusion / SDXL · **Pretrained Generative Model Adaptation** · U-Net / ControlNet Adaptation · **Controllable Text-to-Image Generation** · Identity-Preserving & Multi-Attribute Synthesis
+**Generative AI & Model Adaptation:** Diffusion Models · Stable Diffusion / SDXL · Pretrained Model Adaptation · U-Net / ControlNet · Controllable Text-to-Image Generation · Identity-Preserving Synthesis
 
-**Multimodal & Representation Learning:** **Cross-Modal Representation Learning** · Vision-Language Models (LLaVA) · **Text–Image Conditioning** · Multimodal Perception · Multimodal Embedding Fusion · **Identity–Semantic Disentanglement** · Attention & Feature Fusion · Self-/Video-Supervised Learning
+**Multimodal & Representation Learning:** Cross-Modal Learning · Vision-Language Models (LLaVA) · Text–Image Conditioning · Multimodal Feature Fusion · Representation Disentanglement · Self-/Video-Supervised Learning
 
-**Trustworthy AI & Security:** **Robustness & Vulnerability Evaluation** · Deepfake Generation & Detection · Digital Forensics
+**Trustworthy AI & Security:** Model Robustness & Vulnerability Evaluation · Deepfake Generation & Detection · Digital Forensics
 
 ## Current Status
 
-My Ph.D. dissertation has been **evaluated and approved by all external experts**. I have fulfilled **all academic and publication requirements (CGPA: 3.71/4.00)**. My dissertation defense is scheduled for **18 September 2026**, and I expect to graduate in **October 2026**.
+Completed all Ph.D. academic and publication requirements at the University of Science and Technology of China (USTC). Dissertation evaluated and approved by all external reviewers. **Degree expected in early November 2026.** CGPA: **3.71/4.00**.
 
 <p class="no-pdf">For a complete academic record, <a href="/#download-cv" class="cv-download-link"><strong>download my CV</strong></a>.</p>
