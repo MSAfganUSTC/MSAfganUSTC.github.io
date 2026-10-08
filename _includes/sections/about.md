@@ -19,6 +19,6 @@ My recent first-author publications include Information Fusion (2026), IEEE TCSV
 
 ## Current Status
 
-Completed all Ph.D. academic and publication requirements at the University of Science and Technology of China (USTC). Dissertation evaluated and approved by all external reviewers. **Degree expected in early November 2026.** CGPA: **3.71/4.00**.
+**Ph.D. requirements completed; degree issuance pending (expected early November 2026).**
 
 <p class="no-pdf">For a complete academic record, <a href="/#download-cv" class="cv-download-link"><strong>download my CV</strong></a>.</p>
