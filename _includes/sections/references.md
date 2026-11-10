@@ -85,8 +85,8 @@
       <p>Microsoft · Agentic AI, Computer Vision, and Generative AI</p>
 
       <p>
-        <a href="mailto:tianyi.wei@ntu.edu.sg">
-          tianyi.wei@ntu.edu.sg
+        <a href="mailto:besttianyiwei@gmail.com">
+          besttianyiwei@gmail.com
         </a>
       </p>
 
