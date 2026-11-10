@@ -28,6 +28,11 @@ title: false
 {% include sections/about.md %}
 </section>
 
+<section id="code" class="cv-section" markdown="1">
+<div class="cv-section-title"><i class="fab fa-github" aria-hidden="true"></i><span>Research Code</span></div>
+Selected repositories: [FaceExpr](https://github.com/MSAfganUSTC/FaceExpr) · [DiffAgeX](https://github.com/MSAfganUSTC/DiffAgeX) · [ViDiExPo](https://github.com/MSAfganUSTC/ViDiExPo) · [All repositories](https://github.com/MSAfganUSTC).
+</section>
+
 <section id="education" class="cv-section" markdown="1">
 {% include sections/education.md %}
 </section>
