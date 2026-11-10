@@ -1,24 +1,85 @@
-<div class="cv-section-title">
-  <i class="fas fa-user" aria-hidden="true"></i>
-  <span>About</span>
+---
+permalink: /
+author_profile: true
+title: false
+---
+
+<div class="site-language-control no-pdf" aria-label="Website language selector">
+  <div class="site-language-control__label">
+    <i class="fas fa-globe" aria-hidden="true"></i>
+    <span>Language</span>
+  </div>
+  <div id="google_translate_element"></div>
 </div>
 
-Doctor of Engineering in Cybersecurity (2026) from <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>, specializing in generative AI, diffusion models, and multimodal representation learning. My research focuses on controllable and identity-preserving image generation, pretrained-model adaptation, and trustworthy AI, with applications in human-centered visual synthesis and deepfake robustness.
+<div id="cv-content" class="cv-document">
 
-My recent first-author publications include Information Fusion (2026), IEEE TCSVT (2026), and Cyber-RCI (2025). I am interested in extending my experience in generative modeling and multimodal learning to foundation models and biomedical AI.
+<div class="pdf-only cv-pdf-header">
+  <img class="cv-pdf-profile" src="{{ '/images/' | append: site.author.avatar | relative_url }}" alt="{{ site.author.name | default: site.name }}">
+  <h1>{{ site.author.name | default: site.name }}</h1>
+  <p>{{ site.author.bio }}</p>
+  <p>
+    {% if site.author.email %}{{ site.author.email }}{% endif %}
+    {% if site.url %} · {{ site.url }}{% endif %}
+  </p>
+</div>
 
-## Technical Expertise
+<section id="about" class="cv-section" markdown="1">
+{% include sections/about.md %}
+</section>
 
-**Programming & Frameworks:** Python · PyTorch · Hugging Face Transformers · Diffusers · Accelerate · Multi-GPU Training
+<section id="code" class="cv-section" markdown="1">
+<div class="cv-section-title"><i class="fab fa-github" aria-hidden="true"></i><span>Research Code</span></div>
+Selected repositories: [FaceExpr](https://github.com/MSAfganUSTC/FaceExpr) · [DiffAgeX](https://github.com/MSAfganUSTC/DiffAgeX) · [ViDiExPo](https://github.com/MSAfganUSTC/ViDiExPo) · [All repositories](https://github.com/MSAfganUSTC).
+</section>
 
-**Generative AI & Model Adaptation:** Diffusion Models · Stable Diffusion / SDXL · Pretrained Model Adaptation · U-Net / ControlNet · Controllable Text-to-Image Generation · Identity-Preserving Synthesis
+<section id="education" class="cv-section" markdown="1">
+{% include sections/education.md %}
+</section>
 
-**Multimodal & Representation Learning:** Cross-Modal Learning · Vision-Language Models (LLaVA) · Text–Image Conditioning · Multimodal Feature Fusion · Representation Disentanglement · Self-/Video-Supervised Learning
+<section id="experience" class="cv-section" markdown="1">
+{% include sections/experience.md %}
+</section>
 
-**Trustworthy AI & Security:** Model Robustness & Vulnerability Evaluation · Deepfake Generation & Detection · Digital Forensics
+<section id="ongoing-projects" class="cv-section" markdown="1">
+<div class="cv-section-title"><i class="fas fa-flask" aria-hidden="true"></i><span>Ongoing Research Projects</span></div>
 
-## Current Status
+### Medical Image Analysis and Diabetic Wound Assessment
+**Status:** Ongoing collaboration
 
-**Doctor of Engineering in Cybersecurity awarded November 2, 2026.**
+Investigating deep learning and image augmentation methods for diabetic wound assessment, including analysis of infection-related visual characteristics and longitudinal evaluation of wound healing.
 
-<p class="no-pdf">For a complete academic record, <a href="/#download-cv" class="cv-download-link"><strong>download my CV</strong></a>.</p>
+### Generalizable Information Integration in Pretrained Generative Models
+**Status:** Research direction
+
+Investigating adaptive mechanisms for integrating complementary conditioning information into pretrained diffusion models while preserving their existing generative capabilities. The research emphasizes controllability, representation learning, and systematic evaluation.
+</section>
+
+<section id="publications" class="cv-section" markdown="1">
+{% include sections/publications.md %}
+</section>
+
+<section id="awards" class="cv-section" markdown="1">
+{% include sections/awards.md %}
+</section>
+
+<section id="services" class="cv-section" markdown="1">
+{% include sections/services.md %}
+</section>
+
+<section id="references" class="cv-section" markdown="1">
+{% include sections/references.md %}
+</section>
+
+<section id="cv-panel" class="cv-section no-pdf">
+  <div class="cv-section-title">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+    <span>Curriculum Vitae</span>
+  </div>
+  <p>Download a PDF generated from the current academic information on this page.</p>
+  <p><a href="/#download-cv" class="cv-download-link"><strong>Download Current CV (PDF)</strong></a></p>
+</section>
+
+</div>
+
+<p id="cv-download-status" class="cv-download-status no-pdf" role="status" aria-live="polite"></p>
