@@ -3,7 +3,7 @@
   <span>About</span>
 </div>
 
-PhD researcher at <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>, specializing in generative AI, diffusion models, and multimodal representation learning. My research focuses on controllable and identity-preserving image generation, pretrained-model adaptation, and trustworthy AI, with applications in human-centered visual synthesis and deepfake robustness.
+Doctor of Engineering in Cybersecurity (2026) from <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener"><strong>University of Science and Technology of China (USTC)</strong></a>, advised by Prof. <a href="https://faculty.ustc.edu.cn/liubin1/en/index.htm" target="_blank" rel="noopener"><strong>Bin Liu</strong></a>, specializing in generative AI, diffusion models, and multimodal representation learning. My research focuses on controllable and identity-preserving image generation, pretrained-model adaptation, and trustworthy AI, with applications in human-centered visual synthesis and deepfake robustness.
 
 My recent first-author publications include Information Fusion (2026), IEEE TCSVT (2026), and Cyber-RCI (2025). I am interested in extending my experience in generative modeling and multimodal learning to foundation models and biomedical AI.
 
@@ -19,6 +19,6 @@ My recent first-author publications include Information Fusion (2026), IEEE TCSV
 
 ## Current Status
 
-**Ph.D. requirements completed; degree issuance pending (expected early November 2026).**
+**Doctor of Engineering in Cybersecurity awarded November 2, 2026.**
 
 <p class="no-pdf">For a complete academic record, <a href="/#download-cv" class="cv-download-link"><strong>download my CV</strong></a>.</p>
