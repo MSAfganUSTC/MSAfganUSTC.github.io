@@ -2,15 +2,15 @@
   <i class="fas fa-graduation-cap" aria-hidden="true"></i>
   <span>Education</span>
 </div>
-## Ph.D. Candidate in School of Cyber Science and Technology
+## Doctor of Engineering in Cybersecurity
 
 **University of Science and Technology of China (USTC)**  
 Hefei, China  
-**Present**
+**Awarded November 2, 2026**
 
-- Current CGPA: **3.71/4.00**
+- CGPA: **3.71/4.00**
+- Dissertation: *Identity-Preserving Controllable Facial Attribute Synthesis via Diffusion Models.*
 - Research focus: Generative AI, diffusion models, multimodal learning, and trustworthy AI.
-- Expected Ph.D. graduation: **October 2026**
 
 ## M.S. in Computer Science
 
