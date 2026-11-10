@@ -5,6 +5,8 @@ main:
     url: "/#education"
   - title: "Experience"
     url: "/#experience"
+  - title: "Ongoing Projects"
+    url: "/#ongoing-projects"
   - title: "Publications"
     url: "/#publications"
   - title: "Code"
